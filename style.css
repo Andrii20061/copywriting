@@ -66,6 +66,7 @@ body {
   }
   
   #foto {
+    clip-path: inset(0 2% 0 0 );
     position: relative;
     margin-left: 54%;
     margin-top: -32%;
@@ -81,6 +82,7 @@ body {
   }
   
   #striscia {
+    clip-path: inset(0 0 0 28% );
     width: 105%;
     height: auto;
     opacity: 0;
@@ -169,6 +171,26 @@ body {
     animation: expandWidth 2s forwards;
   }
 
+.shape{
+  position:relative;
+  margin-top: 30%;
+  top:50%;
+  left:50%;
+
+  width:150%;
+  height: 10vh;
+
+  background:black;
+
+  transform:translate(-50%, -50%);
+  z-index: -7;
+
+  opacity:0;
+  transform-origin: center;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+  
   #bloccomano{
     position: relative;
     width: 80;
@@ -296,6 +318,7 @@ body {
     font-size: 230%;
     min-height: 60vh;
     max-width: 55%;
+    margin-left: 1%;
     font-family: 'Fraunces';
     line-height: 2;
   }
@@ -315,7 +338,7 @@ body {
     text-align: center;
     max-width: 45%;
     transform: translateX(115%);
-    margin-top: 10%;
+    margin-top: 14%;
     color: #4B1037;
   }
   
@@ -337,14 +360,25 @@ body {
     font-size: 10%;
   }
   
+  #azione {
+    color: #eaeaea;
+    font-size: 200%;
+    margin-top: -20%;
+  }
+  #azione-testo {
+    color: #eaeaea;
+  }
+  
   .blocco-viola {
     background: linear-gradient(180deg, #6d3a99 0%, #3a145f 25%, #2a0e45 55%, #12061f 100%);
     color: #eaeaea;
+    width: 25%;
+    height: 60vh;
+    margin-left: 65%;
+    margin-top: 20%;
     padding: 10px 5px;
-    margin: 80px auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    width: auto;
   }
   
   ul {
