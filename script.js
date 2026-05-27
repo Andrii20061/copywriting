@@ -274,3 +274,63 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", typeProblema);
     typeProblema();
 });
+
+const shape = document.querySelector(".shape");
+
+window.addEventListener("scroll", () => {
+
+  const scroll = window.scrollY;
+
+  const maxScroll =
+    document.documentElement.scrollHeight -
+    window.innerHeight;
+
+  let p = scroll / maxScroll;
+
+  const start = 0.46;
+  const end = 0.58;
+
+  // -------------------------
+  // FASE 1: espansione
+  // -------------------------
+  let expandProgress = Math.min(
+    Math.max((p - start) / (end - start), 0),
+    1
+  );
+
+  // -------------------------
+  // FASE 2: restringimento dopo end
+  // -------------------------
+  let shrinkProgress = 0;
+
+  if (p > end) {
+    const shrinkRangeStart = end;
+    const shrinkRangeEnd = 1;
+
+    shrinkProgress = Math.min(
+      Math.max((p - shrinkRangeStart) / (shrinkRangeEnd - shrinkRangeStart), 0),
+      1
+    );
+  }
+
+  // -------------------------
+  // combinazione effetti
+  // -------------------------
+
+  // la shape NON sparisce mai
+  shape.style.opacity = Math.max(expandProgress, 1);
+
+  // espansione prima, poi compressione
+  let scaleY = 1;
+
+  if (p <= end) {
+    // fase espansione
+    scaleY = 1 + expandProgress * 8;
+  } else {
+    // fase restringimento progressivo
+    scaleY = (1 + 8) - shrinkProgress * 14;
+  }
+
+  shape.style.transform =
+    `translate(-50%, -50%) scaleY(${scaleY})`;
+});
