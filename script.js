@@ -287,8 +287,8 @@ window.addEventListener("scroll", () => {
 
   let p = scroll / maxScroll;
 
-  const start = 0.46;
-  const end = 0.58;
+  const start = 0.52;
+  const end = 0.60;
 
   // -------------------------
   // FASE 1: espansione
@@ -334,3 +334,23 @@ window.addEventListener("scroll", () => {
   shape.style.transform =
     `translate(-50%, -50%) scaleY(${scaleY})`;
 });
+
+const letters = document.querySelectorAll(".curved-text span");
+
+letters.forEach((el, i) => {
+  const angle = (i - letters.length / 2) * 10; // curva
+  const radius = 80;
+
+  el.style.transform = `
+    rotate(${angle}deg)
+    translateY(-${Math.abs(angle) * 0.8}px)
+  `;
+});
+
+function apriPDF() {
+    document.getElementById("popupPDF").style.display = "flex";
+  }
+  
+  function chiudiPDF() {
+    document.getElementById("popupPDF").style.display = "none";
+  }
