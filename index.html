@@ -54,6 +54,10 @@
             <img src="caramella.png" id="caramella">
         </div>
 
+        <div class="curved-text">
+            <span>U</span><span>N</span><span>I</span><span>S</span><span>C</span><span>I</span><span>T</span><span>I</span>
+          </div>
+
             <h3 id="attenzione-testo">
                 Il <mark>"Logos"</mark> non è solo parola; <mark>è legge</mark>, un sistema razionale che governa il mondo.
                 Nel marketing significa <mark>dare direzione all'idea</mark>
@@ -104,6 +108,21 @@
                 il nostro copywriter trasforma le parole in cio che non si limita ad essere soltanto letto ma, 
                 invita le persone a prendere iniziativa
             </h2>
+
+            <a onclick="apriPDF()" class="link-pdf">
+                Apri PDF
+              </a>
+            
+              <!-- Popup -->
+              <div id="popupPDF" class="popup">
+                <div class="popup-content">
+            
+                  <button class="close-btn" onclick="chiudiPDF()">✖</button>
+            
+                  <iframe src="esempio.pdf" class="pdf-frame"></iframe>
+            
+                </div>
+              </div>
 
             <div class="blocco-viola">
                 <h4 id="soluzione-testo">
