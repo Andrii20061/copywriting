@@ -215,6 +215,13 @@ body {
     opacity: 0;
     transition: opacity 2s ease;
   }
+
+  #caramella {
+    position: relative;
+    width: 50%;
+    margin-left: 26%;
+    margin-top: -18%;
+  }
   
   #mano.visible {
     opacity: 1;
