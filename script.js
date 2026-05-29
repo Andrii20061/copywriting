@@ -63,6 +63,7 @@ const foto = document.getElementById('foto');
 const mano = document.getElementById('mano');
 const biglietto = document.getElementById('biglietto');
 const bloccomano = document.getElementById('bloccomano');
+const titolo = document.getElementById('titolo');
 
 let currentWord = 0;
 let letterIndex = 0;
@@ -103,6 +104,7 @@ function eraseWord() {
             showmano();
             showbiglietto();
             showbloccomano(); 
+            showtitolo();
             
 
             striscia = document.querySelector("#striscia");
@@ -155,6 +157,10 @@ function showmano() {
 
 function showbiglietto() {
     if (biglietto) biglietto.classList.add('visible');
+}
+
+function showtitolo() {
+    if (titolo) titolo.classList.add('visible');
 }
 
 /* ----------------- effetti di scroll (marks, del, striscia) ----------------- */
@@ -288,7 +294,7 @@ window.addEventListener("scroll", () => {
   let p = scroll / maxScroll;
 
   const start = 0.52;
-  const end = 0.60;
+  const end = 0.66;
 
   // -------------------------
   // FASE 1: espansione
@@ -328,7 +334,7 @@ window.addEventListener("scroll", () => {
     scaleY = 1 + expandProgress * 8;
   } else {
     // fase restringimento progressivo
-    scaleY = (1 + 8) - shrinkProgress * 14;
+    scaleY = (1 + 8) - shrinkProgress * 18;
   }
 
   shape.style.transform =
@@ -349,8 +355,14 @@ letters.forEach((el, i) => {
 
 function apriPDF() {
     document.getElementById("popupPDF").style.display = "flex";
+  
+    // blocca lo scroll del sito
+    document.body.style.overflow = "hidden";
   }
   
   function chiudiPDF() {
     document.getElementById("popupPDF").style.display = "none";
+  
+    // riattiva lo scroll
+    document.body.style.overflow = "auto";
   }
