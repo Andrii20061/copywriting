@@ -294,7 +294,7 @@
 
     let p = scroll / maxScroll;
 
-    const start = 0.52;
+    const start = 0.48;
     const end = 0.66;
 
     // -------------------------
