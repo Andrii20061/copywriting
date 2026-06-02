@@ -33,7 +33,7 @@
       height: 150vh;
       margin-top: 160vh;
       background-color: #E0E0E0;
-      margin-top: -30%;
+      margin-top: -27%;
       z-index: -6;
     }
 
@@ -247,6 +247,13 @@
   .highlight{
     color: #74C69D;
   }
+
+  .contrasto{
+      background-color: rgba(230, 199, 139, 0.25);
+      color: white;
+      padding: 0.1em 0.3em;
+      border-radius: 4px;
+  }
     
     #bloccomano{
       position: relative;
@@ -337,8 +344,8 @@
       position: relative;
       width: 40%;
       height: 40%;
-      margin-left: 40%;
-      margin-top: 10%;
+      margin-left: 60%;
+      margin-top: -30%;
       perspective: 1200px;
       opacity: 0;
       transform: translateY(-40px) scale(0.9);
@@ -507,6 +514,11 @@
       line-height: 2;
     }
     
+    #fonti{
+      font-size: 130%;
+      margin-left: 69%;
+    }
+
     #problema {
       position: relative;
       z-index: 4;
@@ -586,31 +598,19 @@
       background: linear-gradient(#000814 0%, #001d3d 25%, #003566 55%, #005f73 100%);
       color: #eaeaea;
       padding: 15px 20px;
-      margin: 80px auto;
-      width: 10%;
+      width: 44%;
+      height: 78vh;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      line-height: 2;
+      line-height: 3;
+      margin-top: 12%;
+      margin-left: 5%;
     }
     
     #copywriter {
-      font-size: 10%;
+      font-size: 120%;
       text-align: center;
       line-height: 2;
-      color: #eaeaea;
-    }
-    
-    #copywriter2 {
-      font-size: 10%;
-      text-align: center;
-      line-height: 2;
-      color: #eaeaea;
-    }
-    
-    #copywriterspazio {
-      font-size: 10%;
-      text-align: center;
-      line-height: 6;
       color: #eaeaea;
     }
     
@@ -641,9 +641,15 @@
       transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
       transform: translate(640px, 60px);
     }
+
+    .blocco-nero {
+      width: 80%;
+      background-color: #000000;
+      height: 10vh;
+    }
     
     .btn:hover {
-      transform: translate(645px, 60px);
+      transform: translate(1%, 1%);
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
       filter: brightness(1.15);
     }
