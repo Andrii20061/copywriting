@@ -71,7 +71,7 @@
         margin-left: 54%;
         margin-top: -32%;
         width: 47%;
-        height: 90vh;
+        height: 100vh;
         z-index: -2;
         border-radius: 2cm 0 0cm 0;
         opacity: 0;
@@ -100,9 +100,9 @@
       
       .tenebre {
         position: relative;
-        width: 45%;
-        height: 94vh;
-        margin-left: 2%;
+        width: 42%;
+        height: 75vh;
+        margin-left: 4%;
         margin-top: -173%;
         z-index: -4;
       }
