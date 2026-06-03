@@ -101,6 +101,7 @@
                     showsubheadline();
                     showtransazione();
                     showfoto();
+                    showStriscia();
                     showmano();
                     showbiglietto();
                     showbloccomano(); 
@@ -109,9 +110,6 @@
                     
 
                     striscia = document.querySelector("#striscia");
-                    if (typeof window.checkScrollEffects === 'function') {
-                        window.checkScrollEffects();
-                    }
                 }
             }
         }
@@ -245,11 +243,6 @@
             penna.style.filter = "blur(1px)";
         }
 
-        /* ----------------- blocco laterale ----------------- */
-        window.addEventListener('scroll', function() {
-            window.scrollTo({ top: window.scrollY, left: 0, behavior: 'auto' });
-        });
-
         /* ----------------- testo a comparsa (problema) ----------------- */
         document.addEventListener("DOMContentLoaded", () => {
             const problema = document.getElementById("problema");
@@ -294,7 +287,7 @@
 
         let p = scroll / maxScroll;
 
-        const start = 0.48;
+        const start = 0.46;
         const end = 0.66;
 
         // -------------------------
@@ -325,7 +318,7 @@
         // -------------------------
 
         // la shape NON sparisce mai
-        shape.style.opacity = Math.max(expandProgress, 1);
+        shape.style.opacity = expandProgress;
 
         // espansione prima, poi compressione
         let scaleY = 1;
