@@ -369,3 +369,27 @@
                 book.classList.add("apri");
             }, 200); // piccolo delay per effetto più naturale
         }
+
+        function initBigliettoAnimazione() {
+
+            if (!mano || !biglietto) return;
+        
+            function attivaBiglietto() {
+                biglietto.classList.add("attivo");
+            }
+        
+            function disattivaBiglietto() {
+                biglietto.classList.remove("attivo");
+            }
+        
+            // hover
+            mano.addEventListener("mouseenter", attivaBiglietto);
+            mano.addEventListener("mouseleave", disattivaBiglietto);
+        
+            // click
+            mano.addEventListener("click", () => {
+                biglietto.classList.toggle("attivo");
+            });
+        }
+        
+        document.addEventListener("DOMContentLoaded", initBigliettoAnimazione);
