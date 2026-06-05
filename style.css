@@ -177,6 +177,7 @@
           margin-left: 40%;
           opacity: 0;
           z-index: 5;
+          perspective: 2000px;
         }
         
         #bloccomano.visible{
@@ -202,6 +203,10 @@
           transition: opacity 2s ease;
         }
 
+        #mano.visible {
+          opacity: 1;
+        }
+
         #biglietto {
           clip-path: inset(0 5% 0 2% );
           position: relative;
@@ -212,19 +217,44 @@
           z-index: 4;
           border-radius: 0.4cm;
           opacity: 0;
-          transition: opacity 2s ease;
-          transform: rotate(8.5deg);
-          cursor: pointer;
-          transform-origin: center center;
+          transform-style: preserve-3d;
+          transition:
+              transform 2s cubic-bezier(.22,1,.36,1),
+              filter 2s ease;
+          will-change: transform, filter;
+          transform:
+        rotate(8deg)
+        rotateY(0deg)
+        rotateX(0deg)
+        scale(1);
         }
         
         #biglietto.visible {
           opacity: 1;
         }
 
-        #mano.visible {
-          opacity: 1;
+        #biglietto.attivo{
+        right: 50%;
+        animation: cartaFlip 1.6s cubic-bezier(0.22,1,0.36,1) forwards;
+        transform-style: preserve-3d;
         }
+
+        @keyframes cartaFlip {
+
+          0%{
+              transform:
+                  translate(0,0)
+                  rotateY(0deg)
+                  scale(1);
+          }
+      
+          100%{
+              transform:
+                  translate(-50%,50%)
+                  rotateY(360deg)
+                  scale(3);
+          }
+      }
 
         #caramella {
           position: relative;
