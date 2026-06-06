@@ -266,9 +266,10 @@
           .curved-text {
             position: relative;
             display: flex;
-            margin-top: -6%;
+            width: 30%;
+            margin-top: -7%;
             margin-left: 35%;
-            font-size: 230%;
+            font-size: 160%;
             padding: 20px 35px;
     border-radius: 40px;
     cursor: pointer;
@@ -277,24 +278,27 @@
 
             .curved-text:hover {
               transform: translateY(-8%);
-              box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+              box-shadow: 0 12px 2px rgba(0, 0, 0, 0.6);
               filter: brightness(1.15);
             }
           
           .curved-text span {
-            margin-bottom: 14%;
+            margin-bottom: 8%;
             width: 8%;
             display: inline-block;
             transform-origin: center;
+            pointer-events: none;
+            margin-left: 5%;
           }
 
-          #azione-testo {
-            color: #eaeaea;
-            margin-top: -23%;
-            margin-left: 2%;
-            font-family: 'Fraunces';
-            text-align: left;
-            font-size: 160%;
+          #attenzione-testo {
+            position: relative;
+            margin-top: 2%;
+            font-size: 156%;
+            max-width: 60%;
+            color: #FFFFFF;
+            z-index: 1;
+            line-height: 2;
           }
 
           #foto {
@@ -407,14 +411,13 @@
             backface-visibility: hidden;
           }
 
-          #attenzione-testo {
-            position: relative;
-            margin-top: -2%;
-            font-size: 156%;
-            max-width: 60%;
-            color: #FFFFFF;
-            z-index: 1;
-            line-height: 2;
+          #azione-testo {
+            color: #eaeaea;
+            margin-top: -23%;
+            margin-left: 2%;
+            font-family: 'Fraunces';
+            text-align: left;
+            font-size: 160%;
           }
 
           .highlight{
