@@ -277,7 +277,7 @@
             }
 
             .curved-text:hover {
-              transform: translateY(-8%);
+              transform: translateY(8%) scale(0.97);
               box-shadow: 0 12px 2px rgba(0, 0, 0, 0.6);
               filter: brightness(1.15);
             }
@@ -426,7 +426,7 @@
 
           .link-pdf {
             cursor: pointer;
-            color: blue;
+            color: #2a5aa5;
             text-underline-offset: 10%;
             text-decoration: underline;
             font-size: 100%;
@@ -688,6 +688,73 @@
         transform: translateY(-8%);
         box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
         filter: brightness(1.15);
+      }
+
+      .contact-popup{
+        display:none;
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background:rgba(0,0,0,0.85);
+        justify-content:center;
+        align-items:center;
+        z-index:9999;
+      }
+      
+      .contact-box{
+        width:90%;
+        max-width:500px;
+        background:#111;
+        border:2px solid blue;
+        border-radius:20px;
+        padding:30px;
+        position:relative;
+      }
+      
+      .contact-box h2{
+        color:#FFD700;
+        text-align:center;
+        margin-bottom:25px;
+      }
+      
+      .contact-box form{
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+      }
+      
+      .contact-box input{
+        padding:15px;
+        border:none;
+        border-radius:10px;
+        font-size:16px;
+      }
+      
+      .send-btn{
+        padding:15px;
+        border:none;
+        border-radius:10px;
+        background:#8B0000;
+        color:white;
+        font-size:18px;
+        cursor:pointer;
+      }
+      
+      .send-btn:hover{
+        filter:brightness(1.2);
+      }
+      
+      .close-contact{
+        position:absolute;
+        top:10px;
+        right:15px;
+        background:none;
+        border:none;
+        color:white;
+        font-size:24px;
+        cursor:pointer;
       }
       
       #azienda {
