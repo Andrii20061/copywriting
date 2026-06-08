@@ -393,3 +393,30 @@
         }
         
         document.addEventListener("DOMContentLoaded", initBigliettoAnimazione);
+
+        const btn = document.querySelector(".btn");
+const contactPopup = document.getElementById("contactPopup");
+const closeContact = document.querySelector(".close-contact");
+const joinTrigger = document.getElementById("joinTrigger");
+
+btn.addEventListener("click", () => {
+  contactPopup.style.display = "flex";
+  document.body.style.overflow = "hidden";
+});
+
+closeContact.addEventListener("click", () => {
+  contactPopup.style.display = "none";
+  document.body.style.overflow = "auto";
+});
+
+contactPopup.addEventListener("click", (e) => {
+  if (e.target === contactPopup) {
+    contactPopup.style.display = "none";
+    document.body.style.overflow = "auto";
+  }
+});
+
+joinTrigger.addEventListener("click", () => {
+    contactPopup.style.display = "flex";
+    document.body.style.overflow = "hidden";
+  });
