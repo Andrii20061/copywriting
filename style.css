@@ -370,7 +370,7 @@
             margin-left: 4%;
             margin-top: -100%;
             z-index: -4;
-            clip-path: inset(0 0 10% 0 );
+            clip-path: inset(0 0 8% 0 );
 
           }
 
@@ -415,7 +415,7 @@
 
           #azione-testo {
             color: #eaeaea;
-            margin-top: -23%;
+            margin-top: -26%;
             margin-left: 2%;
             font-family: 'Fraunces';
             text-align: left;
