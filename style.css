@@ -766,3 +766,122 @@
         text-align: center;
         font-size: 180%;
       }
+
+      @media screen and (max-width: 768px) {
+
+        body{
+          cursor:auto;
+        }
+      
+        .cursor{
+          display:none;
+        }
+      
+        #titolo{
+          font-size: 300%;
+          margin-top: 15%;
+        }
+      
+        #changing-text{
+          font-size: 220%;
+          margin-left: 0;
+          margin-top: 30%;
+          text-align: center;
+        }
+      
+        #subheadline{
+          font-size: 120%;
+          margin-top: 5%;
+        }
+      
+        #final-text{
+          font-size: 250%;
+        }
+      
+        #attenzione{
+          font-size: 180%;
+        }
+      
+        #attenzione-testo{
+          max-width: 90%;
+          margin: auto;
+          font-size: 110%;
+          line-height: 1.7;
+        }
+      
+        #foto{
+          width: 90%;
+          height: auto;
+          margin: 40px auto;
+          display: block;
+          border-radius: 20px;
+        }
+      
+        #striscia{
+          display:none;
+        }
+      
+        #problema{
+          max-width: 90%;
+          margin: 50px auto;
+          font-size: 170%;
+        }
+      
+        #problematesto{
+          max-width: 90%;
+          transform:none;
+          margin: 30px auto;
+          font-size: 110%;
+        }
+      
+        #soluzione{
+          max-width: 100%;
+          transform:none;
+          margin-top: 50px;
+          font-size: 180%;
+        }
+      
+        .blocco-blu,
+        .blocco-viola,
+        .blocco-verde{
+          width: 90%;
+          height: auto;
+          margin: 30px auto;
+        }
+      
+        .book{
+          width: 80%;
+          margin: 40px auto;
+          height: auto;
+        }
+      
+        #fonti{
+          margin-left: 0;
+          text-align: center;
+        }
+      
+        #azienda{
+          font-size: 100%;
+          padding: 20px;
+        }
+      
+        .btn{
+          width: 90%;
+          margin: 30px auto;
+          font-size: 120%;
+        }
+      
+        #mano,
+        #biglietto,
+        #bloccomano{
+          display:none;
+        }
+      
+        .curved-text{
+          width: 100%;
+          margin: 30px auto;
+          justify-content: center;
+          font-size: 120%;
+        }
+      
+      }
