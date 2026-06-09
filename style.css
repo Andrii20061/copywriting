@@ -368,7 +368,7 @@
             width: 42%;
             height: 80vh;
             margin-left: 4%;
-            transform: translateY(-120%);
+            margin-top: -100%;
             z-index: -4;
           }
 
@@ -376,7 +376,7 @@
             position: relative;
             z-index: 4;
             font-size: 160%;
-            margin-top: -96%;
+            margin-top: -44%;
             max-width: 45%;
             transform: translateX(115%);
             line-height: 2;
