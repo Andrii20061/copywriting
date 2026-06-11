@@ -55,6 +55,7 @@
             border: 2px solid white;
             mix-blend-mode: difference;
             cursor: none;
+            z-index: 11;
           }
           
           #canvas {
@@ -71,13 +72,13 @@
             padding: 5px;
             border-radius: 120px;
             backdrop-filter: blur(5px);
-            z-index: 4;
+            z-index: 6;
           }
 
           #penna {
             position: fixed;
             inset: 0;
-            z-index: -3;
+            z-index: -1;
             width: 100%;
             height: 100%;
             opacity: 1;
@@ -113,6 +114,7 @@
             margin-top: 20%;
             margin-left: 60%;
             font-size: 500%;
+            z-index: 2;
           }
 
           #transazione {
@@ -128,7 +130,7 @@
             color: #FFD700;
             text-align: center;
             font-size: 180%;
-            margin-top: -24%;
+            margin-top: -14%;
             opacity: 0;
             transition: opacity 2.5s ease;
             position: relative;
@@ -156,7 +158,7 @@
             background: linear-gradient(to right, transparent, #E0E0E0, transparent);
             transform: scaleX(0);
             transform-origin: center;
-            z-index: 4;
+            z-index: 1;
           }
           
           .linea.expand {
@@ -176,8 +178,8 @@
             margin-top: -20%;
             margin-left: 40%;
             opacity: 0;
-            z-index: 5;
             perspective: 2000px;
+            z-index: 3;
           }
           
           #bloccomano.visible{
@@ -198,7 +200,7 @@
             height: 10%;
             margin-left: 48%;
             margin-top: -37%;
-            z-index: 5;
+            z-index: 3;
             opacity: 0;
             transition: opacity 2s ease;
           }
@@ -214,7 +216,7 @@
             height: 40%;
             margin-left: 70%;
             margin-top: -2%;
-            z-index: 4;
+            z-index: 2;
             border-radius: 0.4cm;
             opacity: 0;
             transform-style: preserve-3d;
@@ -283,7 +285,7 @@
             }
 
             .curved-text:hover {
-              transform: translateY(8%) scale(0.97);
+              transform: translateY(6%) scale(0.97);
               box-shadow: 0 12px 2px rgba(0, 0, 0, 0.6);
               filter: brightness(1.15);
               border: 3px solid #eaeaea ;
@@ -299,13 +301,19 @@
             margin-left: 5%;
           }
 
+          #contatto{
+            font-size: 140%;
+            color: #eaeaea;
+            text-align: center;
+          }
+
           #attenzione-testo {
             position: relative;
             margin-top: 2%;
             font-size: 156%;
             max-width: 60%;
             color: #FFFFFF;
-            z-index: 1;
+            z-index: 6;
             line-height: 2;
           }
 
@@ -316,7 +324,7 @@
             margin-top: -32%;
             width: 47%;
             height: 100vh;
-            z-index: -2;
+            z-index: 4;
             border-radius: 2cm 0 0cm 0;
             opacity: 0;
           }
@@ -330,7 +338,7 @@
             width: 105%;
             height: auto;
             opacity: 0;
-            z-index: -1;
+            z-index: 5;
             margin-left: -30%;
             margin-top: -60%;
             transform: translateY(50px);
@@ -348,12 +356,12 @@
             height: 135vh;
             margin-top: -25%;
             background-color: #E0E0E0;
-            z-index: -6;
+            z-index: 1;
           }
 
           #problema {
             position: relative;
-            z-index: 4;
+            z-index: 6;
             margin-top: -75%;
             font-size: 230%;
             min-height: 60vh;
@@ -366,7 +374,7 @@
           .filo {
             position: relative;
             width: 100%; 
-            z-index: -3;
+            z-index: 3;
             margin-top: -65%;
             margin-left: 1%;
           }
@@ -377,14 +385,14 @@
             height: 80vh;
             margin-left: 4%;
             margin-top: -100%;
-            z-index: -4;
+            z-index: 2;
             clip-path: inset(0 0 8% 0 );
 
           }
 
           #problematesto {
             position: relative;
-            z-index: 4;
+            z-index: 6;
             font-size: 160%;
             margin-top: -48%;
             max-width: 45%;
@@ -399,6 +407,8 @@
             transform: translateX(115%);
             margin-top: 14%;
             color: #4B1037;
+            z-index: 7;
+            position: relative;
           }
 
           .shape{
@@ -413,7 +423,7 @@
             background: #122019;
     
             transform:translate(-50%, -50%);
-            z-index: -7;
+            z-index: -1;
     
             opacity:0;
             transform-origin: center;
@@ -428,6 +438,7 @@
             font-family: 'Fraunces';
             text-align: left;
             font-size: 160%;
+            z-index: 7;
           }
 
           .highlight{
@@ -441,6 +452,7 @@
             text-decoration: underline;
             font-size: 100%;
             font-family: 'Fraunces';
+            z-index: 8;
           }
     
           .popup {
@@ -493,6 +505,7 @@
             line-height: 3;
             margin-top: 12%;
             margin-left: 4%;
+            z-index: 7;
           }
           
           #copywriter {
@@ -500,6 +513,7 @@
             text-align: center;
             line-height: 2;
             color: #eaeaea;
+            z-index: 7;
           }
 
         .contrasto{
@@ -700,6 +714,14 @@
         filter: brightness(1.15);
       }
 
+      body.popup-open{
+        cursor: auto;
+      }
+
+      body.popup-open .cursor{
+        display: none;
+      }
+
       .contact-popup{
         display:none;
         position:fixed;
@@ -710,7 +732,8 @@
         background:rgba(0,0,0,0.85);
         justify-content:center;
         align-items:center;
-        z-index:9999;
+        z-index: 12;
+        cursor: auto;
       }
       
       .contact-box{
