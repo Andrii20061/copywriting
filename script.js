@@ -8,6 +8,12 @@
             cursor.style.top = `${e.pageY}px`;
         });
 
+        if (!document.querySelector(".cursor")) {
+            const cursor = document.createElement("div");
+            cursor.classList.add("cursor");
+            document.body.appendChild(cursor);
+        }
+
         /* ----------------- scroll to top IIFE ----------------- */
         (function() {
             function scrollToTopInstant() {
@@ -53,7 +59,7 @@
         let dels = null;
         let marks = null;
 
-        /* ----------------- animazioni iniziali (typing) ----------------- */
+        /* ----------------- animazioni iniziali, typing ----------------- */
         const words = ["Dai identità", "Al tuo brand"];
         const changingText = document.getElementById("changing-text");
         const finalText = document.getElementById("final-text");
@@ -92,7 +98,7 @@
                 setTimeout(eraseWord, erasingSpeed);
             } else {
                 currentWord++;
-                changingText.innerHTML = "&nbsp;";
+                changingText.textContent = "";
                 if (currentWord < words.length) {
                     setTimeout(typeWord, typingSpeed);
                 } else {
@@ -115,9 +121,13 @@
         }
 
         function showStriscia() {
-            if (!striscia) striscia = document.querySelector('#striscia');
             if (striscia) {
-                striscia.classList.add('visible');
+                const rect = striscia.getBoundingClientRect();
+                const trigger = window.innerHeight * 0.7;
+            
+                if (rect.top <= trigger) {
+                    striscia.classList.add("visible");
+                }
             }
         }
 
@@ -276,6 +286,7 @@
         });
 
         const shape = document.querySelector(".shape");
+        if (shape) {
 
         window.addEventListener("scroll", () => {
 
@@ -290,17 +301,13 @@
         const start = 0.46;
         const end = 0.66;
 
-        // -------------------------
         // FASE 1: espansione
-        // -------------------------
         let expandProgress = Math.min(
             Math.max((p - start) / (end - start), 0),
             1
         );
 
-        // -------------------------
         // FASE 2: restringimento dopo end
-        // -------------------------
         let shrinkProgress = 0;
 
         if (p > end) {
@@ -313,9 +320,7 @@
             );
         }
 
-        // -------------------------
         // combinazione effetti
-        // -------------------------
 
         // la shape NON sparisce mai
         shape.style.opacity = expandProgress;
@@ -334,12 +339,12 @@
         shape.style.transform =
             `translate(-50%, -50%) scaleY(${scaleY})`;
         });
+    }
 
         const letters = document.querySelectorAll(".curved-text span");
 
         letters.forEach((el, i) => {
-        const angle = (i - letters.length / 2) * 10; // curva
-        const radius = 80;
+        const angle = (i - letters.length / 2) * 10; 
 
         el.style.transform = `
             rotate(${angle}deg)
@@ -367,7 +372,7 @@
 
             setTimeout(() => {
                 book.classList.add("apri");
-            }, 200); // piccolo delay per effetto più naturale
+            }, 200); 
         }
 
         function initBigliettoAnimazione() {
@@ -382,11 +387,9 @@
                 biglietto.classList.remove("attivo");
             }
         
-            // hover
             mano.addEventListener("mouseenter", attivaBiglietto);
             mano.addEventListener("mouseleave", disattivaBiglietto);
         
-            // click
             mano.addEventListener("click", () => {
                 biglietto.classList.toggle("attivo");
             });
@@ -399,24 +402,38 @@ const contactPopup = document.getElementById("contactPopup");
 const closeContact = document.querySelector(".close-contact");
 const joinTrigger = document.getElementById("joinTrigger");
 
-btn.addEventListener("click", () => {
-  contactPopup.style.display = "flex";
-  document.body.style.overflow = "hidden";
-});
+if (btn && contactPopup) {
+    btn.addEventListener("click", () => {
+        contactPopup.style.display = "flex";
+        document.body.style.overflow = "hidden";
+        document.body.classList.add("popup-open");
+    });
+}
 
-closeContact.addEventListener("click", () => {
-  contactPopup.style.display = "none";
-  document.body.style.overflow = "auto";
-});
+if (closeContact && contactPopup) {
+    closeContact.addEventListener("click", () => {
+        contactPopup.style.display = "none";
+        document.body.style.overflow = "auto";
+    });
+}
 
-contactPopup.addEventListener("click", (e) => {
-  if (e.target === contactPopup) {
-    contactPopup.style.display = "none";
-    document.body.style.overflow = "auto";
-  }
-});
+if (joinTrigger && contactPopup) {
+    joinTrigger.addEventListener("click", () => {
+        contactPopup.style.display = "flex";
+        document.body.style.overflow = "hidden";
+        document.body.classList.remove("popup-open");
+    });
+}
 
-joinTrigger.addEventListener("click", () => {
-    contactPopup.style.display = "flex";
-    document.body.style.overflow = "hidden";
-  });
+//performance scroll telefono
+let ticking = false;
+
+window.addEventListener("scroll", () => {
+    if (!ticking) {
+        window.requestAnimationFrame(() => {
+            checkScrollEffects();
+            ticking = false;
+        });
+        ticking = true;
+    }
+});
