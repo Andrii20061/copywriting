@@ -951,4 +951,18 @@
                 margin-left: 13%;
               }
 
+              #finale{
+                max-width: 90%;
+                margin-left: 5%;
+              }
+
+              #subheadline{
+                margin-top: 7%;
+              }
+
+              .curved-text{
+                width: 80%;
+                margin-left: 3%;
+              }
+
             }
