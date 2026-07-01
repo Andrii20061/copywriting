@@ -966,3 +966,9 @@
               }
 
             }
+
+            @media screen and (max-width: 568px) {
+              .blocco-bianco{
+                margin-top: -10%;
+              }
+            }
