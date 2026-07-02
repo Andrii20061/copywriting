@@ -834,7 +834,7 @@
               font-size: 180%;
             }
 
-            @media screen and (max-width: 568px) {
+            @media screen and (max-width: 768px) {
 
               body{
                 background: linear-gradient(
@@ -862,7 +862,7 @@
               }
 
               .blocco-bianco{
-                margin-top: -55%;
+                margin-top: -75%;
               }
               
               #problema{
@@ -907,7 +907,7 @@
               }
 
               .btn{
-                margin-left: 30%;
+                margin-left: 23%;
               }
 
               .contact-box{
@@ -948,7 +948,7 @@
               }
 
               #changing-text{
-                margin-left: 13%;
+                margin-left: 10%;
               }
 
               #finale{
@@ -965,10 +965,4 @@
                 margin-left: 3%;
               }
 
-            }
-
-            @media screen and (max-width: 480px) {
-              .blocco-bianco{
-                margin-top: -20%;
-              }
             }
