@@ -834,7 +834,7 @@
               font-size: 180%;
             }
 
-            @media screen and (min-width: 600px) and (max-width: 768px) {
+            @media screen and (max-width: 768px) {
 
               body{
                 background: linear-gradient(
@@ -862,7 +862,7 @@
               }
 
               .blocco-bianco{
-                margin-top: -55%;
+                margin-top: -85%;
               }
               
               #problema{
