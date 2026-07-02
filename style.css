@@ -838,12 +838,12 @@
 
               body{
                 background: linear-gradient(
-    #2d0a0a 10px,
-    #2a0000 5%,
-    #4d0000 20%,
-    #730000 50%,
-    #8B0000 100%
-);
+                  #2d0a0a 10px,
+                  #2a0000 5%,
+                  #4d0000 20%,
+                  #730000 50%,
+                  #8B0000 100%
+                  );
                 cursor:auto;
               }
             
@@ -862,7 +862,7 @@
               }
 
               .blocco-bianco{
-                margin-top: -85%;
+                margin-top: -65%;
               }
               
               #problema{
