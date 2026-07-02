@@ -846,6 +846,10 @@
                   );
                 cursor:auto;
               }
+
+              #finale{
+                line-height: 1;
+              }
             
               .cursor{
                 display:none;
@@ -862,7 +866,7 @@
               }
 
               .blocco-bianco{
-                margin-top: -65%;
+                margin-top: -75%;
               }
               
               #problema{
@@ -907,7 +911,7 @@
               }
 
               .btn{
-                margin-left: 30%;
+                margin-left: 15%;
               }
 
               .contact-box{
@@ -962,7 +966,7 @@
 
               .curved-text{
                 width: 80%;
-                margin-left: 3%;
+                margin-left: 2%;
                 color: #E6B17A;
               }
 
