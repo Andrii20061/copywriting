@@ -834,7 +834,7 @@
               font-size: 180%;
             }
 
-            @media screen and (max-width: 768px) {
+            @media screen and (min-width: 500px) and (max-width: 768px) {
 
               body{
                 background: linear-gradient(
@@ -862,7 +862,7 @@
               }
 
               .blocco-bianco{
-                margin-top: -75%;
+                margin-top: -55%;
               }
               
               #problema{
@@ -907,7 +907,7 @@
               }
 
               .btn{
-                margin-left: 23%;
+                margin-left: 30%;
               }
 
               .contact-box{
@@ -948,7 +948,7 @@
               }
 
               #changing-text{
-                margin-left: 10%;
+                margin-left: 13%;
               }
 
               #finale{
@@ -963,6 +963,7 @@
               .curved-text{
                 width: 80%;
                 margin-left: 3%;
+                color: #F7E7CE
               }
 
             }
