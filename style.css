@@ -1,4 +1,4 @@
-                    body {
+                  body {
                       background: linear-gradient(#000000 10px, #1a0000 5%, #4d0000 20%, #730000 50%, #8B0000 100%);
                       background-repeat: no-repeat;
                       background-attachment: fixed;
@@ -875,11 +875,11 @@
                   }
 
                   #problematesto{
-                    margin-top: -78%;
+                    margin-top: -83%;
                     font-size: 145%;
-                    max-width: 55%;
-                    width: 55%;
-                    margin-left: 55%;
+                    max-width: 47%;
+                    width: 47%;
+                    margin-left: 48%;
                   }
 
                   #problematesto2{
