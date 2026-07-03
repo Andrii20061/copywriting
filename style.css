@@ -374,7 +374,7 @@
                     margin-top: -1%;
                     font-size: 230%;
                     min-height: 60vh;
-                    max-width: 55%;
+                    max-width: 50%;
                     margin-left: 1%;
                     font-family: 'Fraunces';
                     line-height: 2;
@@ -875,8 +875,9 @@
                 }
 
                 #problematesto{
-                  margin-top: -62%;
+                  margin-top: -72%;
                   font-size: 145%;
+                  max-width: 40%;
                 }
 
                 #problematesto2{
@@ -893,8 +894,8 @@
                 }
 
                 .blocco-blu{
-                  width: 92%;
-                  margin-left: 1%;
+                  width: 90%;
+                  margin-left: 0.5%;
                 }
 
                 #attenzione-testo{
@@ -963,12 +964,16 @@
 
                 .curved-text{
                   width: 70%;
-                  margin-left: 10%;
+                  margin-left: 2%;
                   color: #E6B17A;
                 }
 
                 #azienda{
                   font-size: 180%;
+                }
+
+                #penna{
+                  display: none;
                 }
 
               }
