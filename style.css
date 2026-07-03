@@ -861,10 +861,6 @@
                   color: #E0E0E0;
                 }
 
-                .curved-text{
-                  margin-left: 30%;
-                }
-
                 .blocco-bianco{
                   margin-top: -85%;
                 }
@@ -898,7 +894,7 @@
 
                 .blocco-blu{
                   width: 90%;
-                  margin-left: 1.5%;
+                  margin-left: 1%;
                 }
 
                 #attenzione-testo{
@@ -906,12 +902,12 @@
                 }
 
                 #foto{
-                  margin-top: -54%;
+                  margin-top: -64%;
                   height: 60vh;
                 }
 
                 .btn{
-                  margin-left: 15%;
+                  margin-left: 18%;
                 }
 
                 .contact-box{
