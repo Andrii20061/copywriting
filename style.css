@@ -862,7 +862,7 @@
                 }
 
                 .blocco-bianco{
-                  margin-top: -85%;
+                  margin-top: -80%;
                 }
                 
                 #problema{
@@ -875,9 +875,9 @@
                 }
 
                 #problematesto{
-                  margin-top: -72%;
+                  margin-top: -76%;
                   font-size: 145%;
-                  max-width: 40%;
+                  max-width: 55%;
                 }
 
                 #problematesto2{
@@ -903,7 +903,7 @@
                 }
 
                 #foto{
-                  margin-top: -64%;
+                  margin-top: -69%;
                   height: 60vh;
                 }
 
@@ -945,7 +945,7 @@
                 .blocco-verde{
                   width: 90%;
                   margin-top: 8%;
-                  margin-left: 1.5%;
+                  margin-left: 0.5%;
                 }
 
                 #changing-text{
@@ -964,12 +964,12 @@
 
                 .curved-text{
                   width: 70%;
-                  margin-left: 2%;
+                  margin-left: 6%;
                   color: #E6B17A;
                 }
 
                 #azienda{
-                  font-size: 180%;
+                  font-size: 120%;
                 }
 
                 #penna{
