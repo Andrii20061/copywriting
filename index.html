@@ -1,979 +1,295 @@
-                body {
-                    background: linear-gradient(#000000 10px, #1a0000 5%, #4d0000 20%, #730000 50%, #8B0000 100%);
-                    background-repeat: no-repeat;
-                    background-attachment: fixed;
-                    background-position: center;
-                    background-size: cover;
-                    cursor: none;
-                    transform-origin: top center;
-                    margin: 0;
-                    overflow-x: hidden;
-                  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setta del Logos</title>
+    <link rel="stylesheet" href="Setta_del_logos_2.css">
 
-                  del {
-                    position: relative;
-                    text-decoration: none;
-                    color: white;
-                  }
-                  
-                  del::after {
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    top: calc(50% + 3px);
-                    height: 2px;
-                    width: 0%;
-                    background: red;
-                    transition: width 0.8s ease;
-                  }
-                  
-                  del.cancellato::after {
-                    width: 100%;
-                  }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
 
-                  mark {
-                    color: #FFFFFF;
-                    background: linear-gradient(to right, #FFD700 100%, transparent 0);
-                    background-size: 0% 100%;
-                    background-repeat: no-repeat;
-                    transition: background-size 1s ease, color 1s ease;
-                  }
-                  
-                  mark.attivo {
-                    background-size: 100% 100%;
-                    color: #000000;
-                  }
-                  
-                  .cursor {
-                    position: absolute;
-                    width: 20px;
-                    height: 20px;
-                    border-radius: 50%;
-                    pointer-events: none;
-                    transform: translate(-50%, -50%);
-                    transition: transform 150ms ease-in-out;
-                    border: 2px solid white;
-                    mix-blend-mode: difference;
-                    cursor: none;
-                    z-index: 11;
-                  }
-                  
-                  #canvas {
-                    width: 100%;
-                    max-width: 1440px;
-                    margin: 0 auto;
-                  }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asimovian&display=swap" rel="stylesheet">
 
-                  .logo {
-                    position: fixed;
-                    top: 20px;
-                    left: 20px;
-                    background: rgba(255, 255, 255, 0.1);
-                    padding: 5px;
-                    border-radius: 120px;
-                    backdrop-filter: blur(5px);
-                    z-index: 6;
-                  }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
 
-                  #penna {
-                    position: fixed;
-                    inset: 0;
-                    z-index: -1;
-                    width: 100%;
-                    height: 100%;
-                    opacity: 1;
-                    filter: blur(0px);
-                    transition: 1.8s ease, filter 1.8s ease;
-                    pointer-events: none;
-                  }
+    <img src="copywriter.jpeg" id="penna">
 
-                  .logo img {
-                    width: clamp(60px, 12vw, 170px);
-                    height: auto;
-                    border-radius: 50%;
-                  }
+    <div class="logo">
+        <img src="logo_3.png" alt="Logo">
+    </div>
 
-                  #titolo {
-                    text-align: center;
-                    margin-top: 4%;
-                    font-size: 650%;
-                    width: 100%;
-                    opacity: 0;
-                    transition: opacity 2.5s ease;
-                  }
-                  
-                  #titolo.visible {
-                    opacity: 1;
-                  }
-                  
-                  #changing-text {
-                    display: block;
-                    white-space: nowrap;
-                    color: #FFFFFF;
-                    font-family: "Story Script";
-                    margin-top: 20%;
-                    margin-left: 60%;
-                    font-size: 500%;
-                    z-index: 2;
-                  }
+    
+        <div id="canvas">
 
-                  #transazione {
-                    opacity: 0;
-                    transition: opacity 2.5s ease;
-                  }
-                  
-                  #transazione.visible {
-                    opacity: 1;
-                  }
+            <h1 id="titolo">COPYWRITER</h1>
 
-                  #subheadline {
-                    color: #FFD700;
-                    text-align: center;
-                    font-size: 180%;
-                    margin-top: -14%;
-                    opacity: 0;
-                    transition: opacity 2.5s ease;
-                    position: relative;
-                  }
-                  
-                  #subheadline.visible {
-                    opacity: 1;
-                  }
-                  
-                  #final-text {
-                    opacity: 0;
-                    transition: opacity 0.8s ease, transform 0.8s ease;
-                    font-family: 'Story Script';
-                    font-size: 500%;
-                    margin-top: 1%;
-                    text-align: center;
-                    color: #FFFFFF;
-                  }
+            <h1 id="changing-text"></h1>
 
-                  .linea {
-                    width: 100%;
-                    position: relative;
-                    height: 1.4vh;
-                    margin-top: -3%;
-                    background: linear-gradient(to right, transparent, #E0E0E0, transparent);
-                    transform: scaleX(0);
-                    transform-origin: center;
-                    z-index: 1;
-                  }
-                  
-                  .linea.expand {
-                    animation: expandWidth 2s forwards;
-                  }
+            <section id="transazione">
 
-                  @keyframes expandWidth {
-                    to {
-                        transform: scaleX(1);
-                    }
-                  }
+            <h1 id="subheadline">L'ordine con cui ti esprimi</h1>
+            <h1 id="final-text">Setta del Logos</h1>
 
-                  #bloccomano{
-                    position: relative;
-                    width: 60%;
-                    height: 80%;
-                    margin-top: -20%;
-                    margin-left: 40%;
-                    opacity: 0;
-                    perspective: 2000px;
-                    z-index: 3;
-                  }
-                  
-                  #bloccomano.visible{
-                    opacity: 1;
-                  }
+            <div class="linea"></div>
 
-                  #attenzione {
-                    color: #FFFFFF;
-                    font-size: 300%;
-                    margin-top: 3%;
-                    text-align: center;
-                    font-family: 'Story Script';
-                  }
+            <h2 id="attenzione">Dove l'inchiostro diventa potere</h2>
 
-                  #mano {
-                    width: 48%;
-                    position: relative;
-                    height: 10%;
-                    margin-left: 48%;
-                    margin-top: -37%;
-                    z-index: 3;
-                    opacity: 0;
-                    transition: opacity 2s ease;
-                  }
+        <div id="bloccomano">
+            <div>
+                <img src="biglietto_da_visita.png" id="biglietto">
+            </div>
 
-                  #mano.visible {
-                    opacity: 1;
-                  }
+            <div>
+                <img src="mano.png" id="mano">
+            </div>
+        </div>
 
-                  #biglietto {
-                    clip-path: inset(0 5% 0 2% );
-                    position: relative;
-                    width: 16%;
-                    height: 40%;
-                    margin-left: 70%;
-                    margin-top: -2%;
-                    z-index: 2;
-                    border-radius: 0.4cm;
-                    opacity: 0;
-                    transform-style: preserve-3d;
-                    transition:
-                        transform 2s cubic-bezier(.22,1,.36,1),
-                        filter 2s ease;
-                    will-change: transform, filter;
-                    transform:
-                  rotate(8deg)
-                  rotateY(0deg)
-                  rotateX(0deg)
-                  scale(1);
-                  }
-                  
-                  #biglietto.visible {
-                    opacity: 1;
-                  }
+        <div>
+            <img src="caramella.png" id="caramella">
+        </div>
 
-                  #biglietto.attivo{
-                  right: 50%;
-                  animation: cartaFlip 1.6s cubic-bezier(0.22,1,0.36,1) forwards;
-                  transform-style: preserve-3d;
-                  }
+        <div class="curved-text" id="joinTrigger">
+            <span>U</span><span>N</span><span>I</span><span>S</span><span>C</span><span>I</span><span>T</span><span>I</span>
+          </div>
 
-                  @keyframes cartaFlip {
+            <h3 id="attenzione-testo">
+                Il <mark>"Logos"</mark> non è solo parola; <mark>è legge</mark>, un sistema razionale che governa il mondo.
+                Nel marketing significa <mark>dare direzione all'idea</mark>
+                <br><br>
+                Pochi lo capiscono, perché la maggior parte segue le <del>opinioni personali</del>, mentre per noi della Setta è la struttura oggettiva della realta, <mark>è il ponte tra cosmo e l'uomo.</mark>
+                <br><br>
+                I filosofi greci lo vedevano come un filo invisibile che collega il pensiero alla realtà, e oggi questo <mark>è il filo che trasforma un grido in una melodia, in un brand.</mark>
+            </h3>
+    
+            <div>
+                <img src="striscia_2.png" id="striscia">
+            </div>
 
-                    0%{
-                        transform:
-                            translate(0,0)
-                            rotateY(0deg)
-                            scale(1);
-                    }
+            <div>
+                <img src="alberi.jpeg" id="foto">
+            </div>  
+
+            <div class="blocco-bianco">
+
+                <div class="invisibile"></div>
+
+            <h2 id="problema">Scegli le parole, prima che siano gli altri a sceglierle per te</h2>  
+
+            <div>
+                <img src="filo2.png" class="filo">
+            </div>
+
+            <div>
+                <img src="king.jpeg" class="tenebre">
+            </div>
+
+            <h2 id="problematesto">
+                Il tuo messaggio si dissolve nel caos di frasi sparse, e per questo non trova mai la sua destinazione.
+                <br>
+                <mark style='background-color: purple;'>Dai volume e sostanza alla tua voce!</mark><br>
                 
-                    100%{
-                        transform:
-                            translate(-50%,50%)
-                            rotateY(360deg)
-                            scale(3);
-                    }
-                }
+            </h2>
 
-                  #caramella {
-                    position: relative;
-                    width: 50%;
-                    margin-left: 26%;
-                    margin-top: -18%;
-                  }
+            <h2 id="problematesto2">
+                <mark style='background-color: purple;'>Dagli un senso,</mark><br>
+                affinché tutti possano comprenderla. <br>Dai autorità alle tue parole, 
+                <mark style='background-color: purple;'>perché non vince chi parla di piu, ma chi parla meglio.</mark>
+            </h2>
 
-                  .curved-text {
-                    position: relative;
-                    display: flex;
-                    width: 30%;
-                    margin-top: -7%;
-                    margin-left: 35%;
-                    font-size: 160%;
-                    padding: 40px 35px;
-            border-radius: 40px;
-            cursor: pointer;
-            transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
-            border: 3px solid #eaeaea ;
-            justify-content: center;
-            align-items: center;
-            text-underline-offset: 10%;
-                    text-decoration: underline;
-                    border: 4px solid #122019;
-                    }
+            <h2 id="soluzione">Copywriting strategico</h2>
+        </div>
 
-                    .curved-text:hover {
-                      transform: translateY(6%) scale(0.97);
-                      box-shadow: 0 12px 2px rgba(0, 0, 0, 0.6);
-                      filter: brightness(1.15);
-                      border: 3px solid #eaeaea ;
-                    }
-                  
-                  .curved-text span {
-                    margin-top: 4%;
-                    margin-bottom: 4%;
-                    width: 8%;
-                    display: inline-block;
-                    transform-origin: center bottom;
-                    pointer-events: none;
-                    margin-left: 5%;
-                  }
+            <div class="shape"></div>
 
-                  #contatto{
-                    font-size: 140%;
-                    color: #eaeaea;
-                    text-align: center;
-                  }
-
-                  #attenzione-testo {
-                    position: relative;
-                    margin-top: 4%;
-                    font-size: 156%;
-                    max-width: 60%;
-                    color: #FFFFFF;
-                    z-index: 6;
-                    line-height: 2;
-                    margin-left: 1%;
-                  }
-                  
-                  #striscia {
-                    clip-path: inset(0 0 0 28.5% );
-                    width: 105%;
-                    height: auto;
-                    opacity: 0;
-                    z-index: 5;
-                    margin-left: -30%;
-                    margin-top: -40%;
-                    transform: translateY(50px);
-                    transition: opacity 0.2s linear, transform 0.2s linear;
-                  }
-                  
-                  #striscia.visible {
-                    opacity: 1;
-                    transform: translateY(0);
-                  }
-
-                  .blocco-bianco {
-                    position: relative;
-                    width: 100%;
-                    margin-top: -47vh;
-                    background-color: #E0E0E0;
-                    z-index: 1;
-                    height: 140%;
-                  }
-
-                  #foto {
-                    clip-path: inset(0 2% 0 0 );
-                    position: relative;
-                    margin-left: 54%;
-                    margin-top: -160%;
-                    width: 47%;
-                    height: auto;
-                    max-height: 100vh;
-                    z-index: 4;
-                    border-radius: 2cm 0 0 2cm;
-                    opacity: 0;
-                  }
-                  
-                  #foto.visible {
-                    opacity: 1;
-                  }
-
-                  .invisibile{
-                    width: 100%;
-                    height: 4vh;
-                    background-color: #e0e0e0;
-                    z-index: 1;
-                  }
-
-                  #problema {
-                    position: relative;
-                    z-index: 6;
-                    margin-top: -1%;
-                    font-size: 230%;
-                    min-height: 60vh;
-                    max-width: 50%;
-                    margin-left: 1%;
-                    font-family: 'Fraunces';
-                    line-height: 2;
-                  }
-
-                  .filo {
-                    position: relative;
-                    width: 100%; 
-                    z-index: 3;
-                    margin-top: -65%;
-                    margin-left: 1%;
-                  }
-
-                  .tenebre {
-                    position: relative;
-                    width: 42%;
-                    height: 80vh;
-                    margin-left: 4%;
-                    margin-top: -120%;
-                    z-index: 2;
-                    clip-path: inset(0 0 5% 0 );
-
-                  }
-
-                  #problematesto {
-                    position: relative;
-                    z-index: 6;
-                    font-size: 160%;
-                    margin-top: -40%;
-                    max-width: 45%;
-                    margin-left: 60%;
-                    line-height: 2;
-                  }
-
-                  #problematesto2 {
-                    position: relative;
-                    z-index: 6;
-                    font-size: 160%;
-                    margin-top: 2%;
-                    max-width: 45%;
-                    margin-left: 60%;
-                    line-height: 2;
-                  }
-
-                  #soluzione {
-                    font-size: 290%;
-                    text-align: center;
-                    max-width: 45%;
-                    margin-left: 55%;
-                    margin-top: 12%;
-                    color: #4B1037;
-                    z-index: 7;
-                    position: relative;
-                    margin-bottom: 6%;
-                  }
-
-                  .shape{
-                    position:relative;
-                    margin-top: 30%;
-                    top:50%;
-                    left:50%;
-            
-                    width:100%;
-                    height: 13vh;
-            
-                    background: #122019;
-            
-                    transform:translate(-50%, -50%);
-                    z-index: -1;
-            
-                    opacity:0;
-                    transform-origin: center;
-                    will-change: transform, opacity;
-                    backface-visibility: hidden;
-                  }
-
-                  #azione-testo {
-                    color: #eaeaea;
-                    margin-top: -30%;
-                    margin-left: 2%;
-                    font-family: 'Fraunces';
-                    text-align: left;
-                    font-size: 160%;
-                    z-index: 7;
-                  }
-
-                  .highlight{
-                    color: #74C69D;
-                  }
-
-                  .link-pdf {
-                    cursor: pointer;
-                    color: #2a5aa5;
-                    text-underline-offset: 10%;
-                    text-decoration: underline;
-                    font-size: 100%;
-                    font-family: 'Fraunces';
-                    z-index: 8;
-                  }
-            
-                  .popup {
-                    display: none;
-                    position: fixed;
-                    inset: 0;
-                    background: transparent;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 20px;
-                    box-sizing: border-box;
-                    z-index: 9;
-                  }
-            
-                  .popup-content {
-                    width: 300%;
-                    max-width: 800px;
-                    height: 100%;
-                    max-height: 90vh;
-                    background: white;
-                    position: relative;
-                    border-radius: 10px;
-                    overflow: hidden;
-                    border-radius: 15px;
-                    align-items: center;
-                  }
-            
-                  .pdf-frame {
-                    width: 100%;
-                    height: 100%;
-                    border: none;
-                  }
-            
-                  .close-btn {
-                    position: absolute;
-                    top: 10px;
-                    right: 10px;
-                    z-index: 10;
-                    padding: 6px 10px;
-                    cursor: pointer;
-                  }
-
-                  .blocco-blu {
-                    background: linear-gradient(#000814 0%, #001d3d 25%, #003566 55%, #005f73 100%);
-                    color: #eaeaea;
-                    padding: 15px 20px;
-                    width: 44%;
-                    height: auto;
-                    min-height: 78vh;
-                    border-radius: 10px;
-                    line-height: 3;
-                    margin-top: 12%;
-                    margin-left: 4%;
-                    z-index: 7;
-                  }
-                  
-                  #copywriter {
-                    font-size: 120%;
-                    text-align: center;
-                    line-height: 2;
-                    color: #eaeaea;
-                    z-index: 7;
-                  }
-
-                .contrasto{
-                  background-color: rgba(255,215,0,0.25);
-                    color: white;
-                    padding: 0.1em 0.3em;
-                    border-radius: 4px;
-                }
-
-                  .book {
-                    position: relative;
-                    width: 40%;
-                    height: 40%;
-                    margin-left: 60%;
-                    margin-top: -40%;
-                    perspective: 1200px;
-                    opacity: 0;
-                    transform: translateY(-40px) scale(0.9);
-                    transform-origin: top center;
-                    transform-style: preserve-3d;
-                  }
-                  
-                  .book-cover {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    position: relative;
-                    z-index: 3;
-                    transform-origin: center;
-                    transition: transform 0.5s ease, filter 0.5s ease;
-                    will-change: transform;
-                  }
-                  
-                  .book-pages {
-                    position: absolute;
-                    left: 50%;
-                    bottom: 100%;              
-                    transform: translateX(-380%);
-                    width: 10%;
-                    height: 10%;
-                  
-                    opacity: 0;
-                    transition: opacity 0.4s ease;
-                    pointer-events: auto;
-                  
-                    display: flex;
-                    justify-content: center;
-                    align-items: flex-end;
-                  }
-                  
-                  .book-pages img {
-                    position: relative;
-                  
-                    width: 2000%;
-                    height: 2000%;
-                    object-fit: cover;
-                  
-                    border-radius: 10px;
-                    border: 3px solid white;
-                    box-shadow: 0 18px 35px rgba(0,0,0,0.6);
-                  
-                    transform-origin: bottom center;
-                    transition: transform 0.5s ease;
-                    cursor: pointer;
-                  }
-
-              .book:hover .book-cover {
-                transform: translateY(-6px) scale(1.03);
-                filter: brightness(1.1);
-              }
-
-              .book:hover .book-pages {
-                opacity: 1;
-              }
-
-              .book:hover .book-pages a:nth-child(1) img {
-                transform: translate(-60px, -40px) rotate(-18deg) scale(1.05);
-              }
-
-              .book:hover .book-pages a:nth-child(2) img {
-                transform: translate(60px, -80px) rotate(18deg) scale(1.1);
-              }
-
-              .book:hover .book-pages a:nth-child(3) img {
-                transform: translate(0px, -110px) rotate(0deg) scale(1.08);
-              }
-
-              @keyframes boxOpen {
-                0% {
-                  transform: rotateX(-90deg) scale(0.9);
-                  opacity: 0;
-                }
-                60% {
-                  transform: rotateX(10deg) scale(1.02);
-                  opacity: 1;
-                }
-                100% {
-                  transform: rotateX(0deg) scale(1);
-                  opacity: 1;
-                }
-              }
-
-              .book.apri {
-                animation: boxOpen 1.2s ease-out forwards;
-              }
-              
-              #fonti{
-                font-size: 130%;
-                margin-left: 69%;
-              }
-
-              .blocco-viola {
-                background: linear-gradient(180deg, #6d3a99 0%, #3a145f 25%, #2a0e45 55%, #12061f 100%);
-                color: #eaeaea;
-                width: 25%;
-                height: auto;
-                min-height: 40vh;
-                margin-left: 65%;
-                margin-top: 7%;
-                padding: 10px 5px;
-                border-radius: 10px;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-              }
-              
-              ul {
-                list-style-position: inside;
-                padding-left: 0;
-              }
-
-              #soluzione-testo {
-                font-size: 140%;
-                color: #eaeaea;
-                text-align: center;
-              }
-
-              #importante {
-                font-family: "Story Script";
-                text-align: center;
-                font-size: 140%;
-              }
-
-              .blocco-verde {
-                background: linear-gradient(180deg, #011302 0%, #071b11 20%, #0d2f20 45%, #0e2e1f 70%, #0a492d 100%);
-                padding: 15px 20px;
-                width: 10%;
-                border-radius: 10px;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-                line-height: 2;
-                margin-top: -19%;
-                margin-left: 20%;
-                width: 25%;
-                height: auto;
-                min-height: 53vh;
-              }
-
-              #copywriter2{
-                font-size: 160%;
-                text-align: center;
-                color: #74C69D;
-              }
-
-              #perchecopywriter {
-                color: #eaeaea;
-                text-align: center;
-                font-size: 140%;
-              }
-
-              .contenitore{
-                height: 10%;
-                width: 101%;
-                background-color: black;
-              }
-
-              #finale{
-                font-size: 200%;
-                color: #E0E0E0;
-                margin-top: 10%;
-                text-align: center;
-                line-height: 6;
-              }
-
-              .btn {
-                padding: 25px 38px;
-                font-size: 160%;
-                font-family: inherit;
-                color: #ffffff;
-                background-color: #8B0000;
-                border: none;
-                border-radius: 40px;
-                cursor: pointer;
-                transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
-                display: block;
-                margin-left: 40%;
-                margin-top: -1%;
-              }
-              
-              .btn:hover {
-                transform: translateY(-8%);
-                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
-                filter: brightness(1.15);
-              }
-
-              body.popup-open{
-                cursor: auto;
-              }
-
-              body.popup-open .cursor{
-                display: none;
-              }
-
-              .contact-popup{
-                display:none;
-                position:fixed;
-                top:0;
-                left:0;
-                width:100%;
-                height:100%;
-                background:rgba(0,0,0,0.85);
-                justify-content:center;
-                align-items:center;
-                z-index: 12;
-                cursor: auto;
-              }
-              
-              .contact-box{
-                width: min(30%, 420px);
-                height: 90vh;
-                background:#111;
-                border:2px solid blue;
-                border-radius:20px;
-                padding:20px;
-                position:relative;
-                display: flex;
-                flex-direction: column;
-                gap: 15px;
-                overflow: hidden;
-              }
-              
-              .contact-box h2{
-                color:#FFD700;
-                text-align:center;
-                margin-bottom:25px;
-              }
-              
-              .contact-box form{
-                display:flex;
-                flex-direction:column;
-                gap:15px;
-                overflow-y:auto;
-                padding-right:8px;
-              }
-              
-              .contact-box input{
-                width: 100%;
-                box-sizing: border-box;
-                padding:15px;
-                border:none;
-                border-radius:10px;
-                font-size:16px;
-              }
-
-              .contact-box h2,
-              .contact-box h3{
-                margin: 2%;
-              }
-              
-              .send-btn{
-                padding:15px;
-                border:none;
-                border-radius:10px;
-                background:#8B0000;
-                color:white;
-                font-size:18px;
-                cursor:pointer;
-              }
-              
-              .send-btn:hover{
-                filter:brightness(1.2);
-              }
-              
-              .close-contact{
-                position:absolute;
-                top:10px;
-                right:15px;
-                background:none;
-                border:none;
-                color:white;
-                font-size:24px;
-                cursor:pointer;
-              }
-              
-              #azienda {
-                color: #eaeaea;
-                width: auto;
-                margin-top: 6%;
-                text-align: center;
-                font-size: 180%;
-              }
-
-              @media screen and (max-width: 768px) {
-
-                body{
-                  background: linear-gradient(
-                    #2d0a0a 10px,
-                    #2a0000 5%,
-                    #4d0000 20%,
-                    #730000 50%,
-                    #8B0000 100%
-                    );
-                  cursor:auto;
-                }
-
-                #finale{
-                  line-height: 3;
-                }
-              
-                .cursor{
-                  display:none;
-                }
-              
-                #titolo{
-                  font-size: 300%;
-                  margin-top: 25%;
-                  color: #E0E0E0;
-                }
-
-                .blocco-bianco{
-                  margin-top: -85%;
-                }
+            <h2 id="azione-testo">Siamo freelancer, ma prima ancora <span class="highlight">siamo persone che credono nel valore delle idee.</span>
+                <br>
+                Non siamo qui per convincerti a seguire una religione, una moda o un pensiero prestabilito.
+                <br> <br>
+                <span class="highlight">Ogni persona ha qualcosa da dire, ma non sempre riesce a comunicarlo nel modo giusto.</span>
+                <br> <br>
+                È qui che nasce il Logos.
+                <br> <br>
+                <span class="highlight">Noi ci proviamo finchè tu ci riesci </span>
+                <br> <br>
+                Attraverso una scrittura che unisce logica ed emozione, trasformiamo idee, progetti e messaggi in qualcosa che possa davvero arrivare alle persone.
+                <br> <br>
+                Perché <span class="highlight"> a volte la differenza tra un’idea ignorata e un’idea capace di cambiare qualcosa… sta nel modo in cui viene </span>
+                <a onclick="apriPDF()" class="link-pdf">
+                    raccontata.
+                  </a>
                 
-                #problema{
-                  font-size: 187%;
-                }
+                  <!-- Popup -->
+                  <div id="popupPDF" class="popup">
+                    <div class="popup-content">
+                
+                      <button class="close-btn" onclick="chiudiPDF()">✖</button>
+                
+                      <iframe
+                      src="esempio.pdf#view=Fit"
+                      class="pdf-frame">
+                  </iframe>
+                                  
+                    </div>
+                  </div>
+            </h2>
 
-                .tenebre{
-                  margin-top: -60%;
-                  height: 80%;
-                }
+            <div class="blocco-blu">
+                <h3 id="copywriter">
+                    <br>
+                    Ogni impresa cerca metodi di crescita scalabili. Tuttavia, senza un copy efficace,
+                    questi metodi non raggiungono il loro pieno potenziale.
+                    <br> <br>
+                    Si puo creare la campagna più bella al mondo, ma se il 
+                    <br>
+                    messaggio non cattura l'attenzione, 
+                    NESSUNO LA RICORDERÀ!
+                    <br> <br>
+                    <span class="contrasto">Il copywriter serve per coinvolgere le persone!</span>
+                    <br> <br>
+                    Un buon testo non descrive semplicemente un prodotto o un servizio.
+                    <br> <br>
+                    Deve:
+                    <ul>
+                        <li> <span class="contrasto">Comunicare valore</span> </li>
+                        <li> <span class="contrasto">Rispondere ai dubbi del clienti prima ancora che vengano espressi</span> </li>
+                        <li> <span class="contrasto">Far percepire la differenza tra te e la concorrenza</span> </li>
+                    </ul>
 
-                #problematesto{
-                  margin-top: -72%;
-                  font-size: 145%;
-                  max-width: 40%;
-                }
+                </h3>
+            </div>
 
-                #problematesto2{
-                  max-width: 90%;
-                  font-size: 135%;
-                  margin-left: 17%;
-                  margin-top: -10%;
-                }
+            <div class="book">
+  
+                <!-- COPERTINA -->
+                <img src="book.png" class="book-cover" alt="book">
+              
+                <!-- PAGINE -->
+                <div class="book-pages">
 
-                #soluzione{
-                  margin-top: -1%;
-                  margin-left: 30%;
-                  margin-bottom: 10%;
-                }
+                    <a href="https://www.mdpi.com/1099-4300/23/11/1388" target="_blank">
+                  <img src="img1.jpeg">
+                  </a>
 
-                .blocco-blu{
-                  width: 90%;
-                  margin-left: 0.5%;
-                }
+                  <a href="https://www.wordwell.co/blog/the-roi-of-great-copywriting%3A-real-numbers-and-case-studies" target="_blank">
+                  <img src="img2.jpeg">
+                  </a>
+                  
+                  <a href="https://callpm.com/the-roi-of-great-content-why-investing-in-copywriting-pays-off/" target="_blank">
+                  <img src="img3.jpeg">
+                  </a>
+                </div>
+              </div>
 
-                #attenzione-testo{
-                  max-width: 90%;
-                }
+              <h3 id="fonti">
+                <mark>Queste sono alcuni fonti che dimostrano </mark>
+                <br>
+                <mark>l'importanza del copywriter </mark>
+            </h3>
 
-                #foto{
-                  margin-top: -64%;
-                  height: 60vh;
-                }
+            <div class="blocco-viola">
+                <h4 id="soluzione-testo">
+                    Con noi la parola è un dettaglio sottile
+                    e i tuoi testi:
+                    <ul>
+                        <li>catturano l'attenzione</li>
+                        <li>costruiscono fiducia</li>
+                        <li>spingono all'azione</li>
+                    </ul>
+                </h4>
 
-                .btn{
-                  margin-left: 18%;
-                }
+                <h2 id="importante">
+                    <mark>Qui trasformiamo visitatori in <br> consumatori abituali</mark>
+                </h2>
+            </div>
 
-                .contact-box{
-                  width: min(70%);
-                }
+            <div class="blocco-verde">
+                <h4 id="copywriter2">**<mark>Il mercato</mark> non è razionale!**</h4>
+                <h4 id="perchecopywriter">
+                    <mark>È chaos che cerca una guida.</mark><br><br>
+                    Chi parla alla logica viene ignorato.<br>
+                    Chi governa l'emozione conduce.<br><br>
+                    Trova il suo filo emotivo<br>
+                    E guidalo!
+                </h4>
+            </div>
 
-                .book{
-                  width: 60%;
-                  height: 60%;
-                  margin-top: 10%;
-                  margin-left: 23%;
-                }
+            <div class="contenitore">
 
-                #bloccomano{
-                  margin-top: -10%;
-                }
+            <h1 id="finale"> <mark>Raccontaci la tua idea noi la renderemo impossibile da ignorare!</mark> </h1>
 
-                #biglietto.attivo{
-                  width: 24%;
-                  height: 24%;
-                }
+            <button class="btn">Unisciti alla Setta</button>
 
-                #fonti{
-                  max-width: 80%;
-                  margin-left: 20%;
-                  width: 100%;
-                }
+            <div id="contactPopup" class="contact-popup">
+                <div class="contact-box">
+              
+                  <button class="close-contact">✖</button>
+              
+                  <h2>CaRPe DiEm</h2>
+              
+                  <form
+                    action="https://formspree.io/f/xeewglja"
+                    method="POST"
+                  >
 
-                .blocco-viola{
-                  width: 85%;
-                  margin-left: 7%;
-                }
+                  <br>
 
-                .blocco-verde{
-                  width: 90%;
-                  margin-top: 8%;
-                  margin-left: 1.5%;
-                }
+                  <h3 id="contatto">A chi piace lo Spazio e chi mira all'Universo</h3>
 
-                #changing-text{
-                  margin-left: 10%;
-                  font-size: 440%;
-                }
+                  <br>
 
-                #finale{
-                  max-width: 90%;
-                  margin-left: 5%;
-                }
+                  <h3 id="contatto">Compila il modulo 
+                    <br>
+                    e ricevi una consulenza gratuita
+                </h3>
+              
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Nome candidato"
+                      required
+                    >
+                            
+                    <input
+                      type="text"
+                      name="contatto"
+                      placeholder="Come possiamo contattarti?"
+                      required
+                    >
 
-                #subheadline{
-                  margin-top: 7%;
-                }
+                    <h3 id="contatto">Cosa possiamo fare per te?</h3>
 
-                .curved-text{
-                  width: 70%;
-                  margin-left: 2%;
-                  color: #E6B17A;
-                }
+                    <input
+                      type="text"
+                      name="progetto"
+                      placeholder="Raccontaci il tuo progetto"
+                      required
+                    >
 
-                #azienda{
-                  font-size: 180%;
-                }
+                    <br>
+              
+                    <button type="submit" class="send-btn">
+                      [ ENTRA NELLA SETTA ]
+                    </button>
+              
+                  </form>
+              
+                </div>
+              </div>
 
-                #penna{
-                  display: none;
-                }
-
-              }
+                        <h3 id="azienda">SETTA DEL LOGOS &nbsp;&nbsp; | &nbsp;&nbsp;   settadellogos@gmail.com &nbsp;&nbsp;   |   &nbsp;&nbsp;3513786441 </h3>
+                    </div>
+                        
+            
+        </section>
+        </div>
+    <script src="Setta_del_logos_2.js"></script>
+</body>
+</html>
