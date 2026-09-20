@@ -66,9 +66,6 @@
         const subheadline = document.getElementById("subheadline");
         const transazione = document.getElementById('transazione');
         const foto = document.getElementById('foto');
-        const mano = document.getElementById('mano');
-        const biglietto = document.getElementById('biglietto');
-        const bloccomano = document.getElementById('bloccomano');
         const titolo = document.getElementById('titolo');
 
         let currentWord = 0;
@@ -108,9 +105,6 @@
                     showtransazione();
                     showfoto();
                     showStriscia();
-                    showmano();
-                    showbiglietto();
-                    showbloccomano(); 
                     showtitolo();
                     showBook();
                     
@@ -154,18 +148,6 @@
 
         function showfoto() {
             if (foto) foto.classList.add("visible");
-        }
-
-        function showbloccomano() {
-            if (bloccomano) bloccomano.classList.add('visible');
-        }
-
-        function showmano() {
-            if (mano) mano.classList.add('visible');
-        }
-
-        function showbiglietto() {
-            if (biglietto) biglietto.classList.add('visible');
         }
 
         function showtitolo() {
@@ -352,20 +334,6 @@
         `;
         });
 
-        function apriPDF() {
-            document.getElementById("popupPDF").style.display = "flex";
-        
-            // blocca lo scroll del sito
-            document.body.style.overflow = "hidden";
-        }
-        
-        function chiudiPDF() {
-            document.getElementById("popupPDF").style.display = "none";
-        
-            // riattiva lo scroll
-            document.body.style.overflow = "auto";
-        }
-
         function showBook() {
             const book = document.querySelector(".book");
             if (!book) return;
@@ -374,28 +342,6 @@
                 book.classList.add("apri");
             }, 200); 
         }
-
-        function initBigliettoAnimazione() {
-
-            if (!mano || !biglietto) return;
-        
-            function attivaBiglietto() {
-                biglietto.classList.add("attivo");
-            }
-        
-            function disattivaBiglietto() {
-                biglietto.classList.remove("attivo");
-            }
-        
-            mano.addEventListener("mouseenter", attivaBiglietto);
-            mano.addEventListener("mouseleave", disattivaBiglietto);
-        
-            mano.addEventListener("click", () => {
-                biglietto.classList.toggle("attivo");
-            });
-        }
-        
-        document.addEventListener("DOMContentLoaded", initBigliettoAnimazione);
 
         const btn = document.querySelector(".btn");
 const contactPopup = document.getElementById("contactPopup");
