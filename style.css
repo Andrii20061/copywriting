@@ -954,6 +954,17 @@
                   }
 
                   @media screen and (max-width: 574px) {
+
+                   body{
+                      background: linear-gradient(
+                        #380971 10px,
+                        hsl(0, 100%, 8%) 5%,
+                        #480770 20%,
+                        #04063c 50%,
+                        #011d64 100%
+                      );
+                    }
+
                   }
 
                   /*
