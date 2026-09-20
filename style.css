@@ -170,22 +170,7 @@
                             transform: scaleX(1);
                         }
                       }
-
-                      #bloccomano{
-                        position: relative;
-                        width: 60%;
-                        height: 80%;
-                        margin-top: -20%;
-                        margin-left: 40%;
-                        opacity: 0;
-                        perspective: 2000px;
-                        z-index: 3;
-                      }
                       
-                      #bloccomano.visible{
-                        opacity: 1;
-                      }
-
                       #attenzione {
                         color: #FFFFFF;
                         font-size: 300%;
@@ -194,75 +179,11 @@
                         font-family: 'Story Script';
                       }
 
-                      #mano {
-                        width: 48%;
-                        position: relative;
-                        height: 10%;
-                        margin-left: 48%;
-                        margin-top: -37%;
-                        z-index: 3;
-                        opacity: 0;
-                        transition: opacity 2s ease;
-                      }
-
-                      #mano.visible {
-                        opacity: 1;
-                      }
-
-                      #biglietto {
-                        clip-path: inset(0 5% 0 2% );
-                        position: relative;
-                        width: 16%;
-                        height: 40%;
-                        margin-left: 70%;
-                        margin-top: -2%;
-                        z-index: 2;
-                        border-radius: 0.4cm;
-                        opacity: 0;
-                        transform-style: preserve-3d;
-                        transition:
-                            transform 2s cubic-bezier(.22,1,.36,1),
-                            filter 2s ease;
-                        will-change: transform, filter;
-                        transform:
-                      rotate(8deg)
-                      rotateY(0deg)
-                      rotateX(0deg)
-                      scale(1);
-                      }
-                      
-                      #biglietto.visible {
-                        opacity: 1;
-                      }
-
-                      #biglietto.attivo{
-                      right: 50%;
-                      animation: cartaFlip 1.6s cubic-bezier(0.22,1,0.36,1) forwards;
-                      transform-style: preserve-3d;
-                      }
-
-                      @keyframes cartaFlip {
-
-                        0%{
-                            transform:
-                                translate(0,0)
-                                rotateY(0deg)
-                                scale(1);
-                        }
-                    
-                        100%{
-                            transform:
-                                translate(-50%,50%)
-                                rotateY(360deg)
-                                scale(3);
-                        }
-                    }
-
                       #caramella {
                         position: relative;
                         width: 50%;
                         margin-left: 26%;
-                        margin-top: -18%;
+                        margin-top: -4%;
                       }
 
                       .curved-text {
@@ -289,6 +210,7 @@
                           box-shadow: 0 12px 2px rgba(0, 0, 0, 0.6);
                           filter: brightness(1.15);
                           border: 3px solid #eaeaea ;
+                          color: #E6B17A;
                         }
                       
                       .curved-text span {
@@ -299,6 +221,15 @@
                         transform-origin: center bottom;
                         pointer-events: none;
                         margin-left: 5%;
+                      }
+
+                      .trio{
+                        width: 35%;
+                        height: 40vh;
+                        position: relative;
+                        margin-left: 62%;
+                        margin-bottom: -8%;
+                        margin-top: -2%;
                       }
 
                       #contatto{
@@ -368,16 +299,17 @@
                         z-index: 1;
                       }
 
-                      #problema {
-                        position: relative;
-                        z-index: 6;
-                        margin-top: -1%;
+                      #soluzione {
                         font-size: 230%;
-                        min-height: 60vh;
-                        max-width: 50%;
-                        margin-left: 1%;
-                        font-family: 'Fraunces';
-                        line-height: 2;
+                        text-align: center;
+                        max-width: 40%;
+                        margin-left: 52%;
+                        margin-top: 10%;
+                        color: #4B1037;
+                        z-index: 7;
+                        position: relative;
+                        margin-bottom: 6%;
+                        height: auto;
                       }
 
                       .filo {
@@ -395,7 +327,7 @@
                         margin-left: 4%;
                         margin-top: -120%;
                         z-index: 2;
-                        clip-path: inset(0 0 5% 0 );
+                        clip-path: inset(0 0 2% 0 );
 
                       }
 
@@ -406,7 +338,7 @@
                         margin-top: -40%;
                         max-width: 45%;
                         margin-left: 60%;
-                        line-height: 2;
+                        line-height: 1.5;
                       }
 
                       #problematesto2 {
@@ -416,19 +348,19 @@
                         margin-top: 2%;
                         max-width: 45%;
                         margin-left: 60%;
-                        line-height: 2;
+                        line-height: 1.7;
                       }
 
-                      #soluzione {
-                        font-size: 290%;
-                        text-align: center;
-                        max-width: 45%;
-                        margin-left: 55%;
-                        margin-top: 12%;
-                        color: #4B1037;
-                        z-index: 7;
+                      #problema {
                         position: relative;
-                        margin-bottom: 6%;
+                        z-index: 6;
+                        margin-top: 5%;
+                        font-size: 290%;
+                        min-height: 60vh;
+                        max-width: 48%;
+                        margin-left: 7%;
+                        font-family: 'Fraunces';
+                        line-height: 2;
                       }
 
                       .shape{
@@ -474,45 +406,25 @@
                         font-family: 'Fraunces';
                         z-index: 8;
                       }
-                
-                      .popup {
-                        display: none;
-                        position: fixed;
-                        inset: 0;
-                        background: transparent;
-                        justify-content: center;
-                        align-items: center;
-                        padding: 20px;
-                        box-sizing: border-box;
-                        z-index: 9;
-                      }
-                
-                      .popup-content {
-                        width: 300%;
-                        max-width: 800px;
-                        height: 100%;
-                        max-height: 90vh;
-                        background: white;
-                        position: relative;
-                        border-radius: 10px;
-                        overflow: hidden;
-                        border-radius: 15px;
-                        align-items: center;
-                      }
-                
-                      .pdf-frame {
-                        width: 100%;
-                        height: 100%;
-                        border: none;
-                      }
-                
+
                       .close-btn {
                         position: absolute;
                         top: 10px;
                         right: 10px;
                         z-index: 10;
-                        padding: 6px 10px;
+                        width: 40px;
+                        height: 40px;
+                        border: none;
+                        border-radius: 50%;
+                        background: rgba(0, 0, 0, 0.75);
+                        color: white;
+                        font-size: 18px;
                         cursor: pointer;
+                      }
+
+
+                      .close-btn:hover {
+                        background: rgba(0, 0, 0, 0.95);
                       }
 
                       .blocco-blu {
@@ -521,11 +433,11 @@
                         padding: 15px 20px;
                         width: 44%;
                         height: auto;
-                        min-height: 78vh;
+                        min-height: 58vh;
                         border-radius: 10px;
                         line-height: 3;
                         margin-top: 12%;
-                        margin-left: 4%;
+                        margin-left: 7%;
                         z-index: 7;
                       }
                       
@@ -651,12 +563,13 @@
                     color: #eaeaea;
                     width: 25%;
                     height: auto;
-                    min-height: 40vh;
-                    margin-left: 65%;
-                    margin-top: 7%;
+                    min-height: 43vh;
+                    margin-left: 22%;
+                    margin-top: -24%;
                     padding: 10px 5px;
                     border-radius: 10px;
                     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+                    line-height: 1.5;
                   }
                   
                   ul {
@@ -671,7 +584,6 @@
                   }
 
                   #importante {
-                    font-family: "Story Script";
                     text-align: center;
                     font-size: 140%;
                   }
@@ -682,9 +594,9 @@
                     width: 10%;
                     border-radius: 10px;
                     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-                    line-height: 2;
-                    margin-top: -19%;
-                    margin-left: 20%;
+                    line-height: 1.5;
+                    margin-top: 4%;
+                    margin-left: 60%;
                     width: 25%;
                     height: auto;
                     min-height: 53vh;
@@ -835,17 +747,68 @@
                     margin-bottom: 4%;
                   }
 
-                  @media screen and (max-width: 1024px) {
+                  @media screen and (max-width: 1204px) {
 
-                    body{
-                      cursor: auto;
+                    .blocco-viola{
+                      width: 30%;
+                      margin-left: 18%;
                     }
 
-                   
+                    #soluzione{
+                      max-width: 60%;
+                      font-size: 190%;
+                      margin-left: 47%;
+                    }
+
+                    .trio{
+                      margin-bottom: -18%;
+                    }
+
+
+                  }
+
+
+                  @media screen and (max-width: 1060px) {
+
+                    .curved-text{
+                      margin-left: 32%;           
+                    }
+                    
+                    #problematesto{
+                      font-size: 150%;
+                      margin-top: -50%;
+                    }
+
+                    #problematesto2{
+                      font-size: 140%;
+                    }
+
+                    #soluzione{
+                      max-width: 60%;
+                      font-size: 180%;
+                      margin-left: 49%;
+                    }
+
+                    .trio{
+                      margin-bottom: -26%;
+                    }
+
+                    .blocco-viola{
+                      margin-top: -32%;
+                      margin-left: 18%;
+                      width: 32%;
+                    }
+
+                    .blocco-verde{                    
+                      max-height: 75vh;
+                      line-height: 1.2;
+                    }
+                        
                   }
 
                   @media screen and (max-width: 768px) {
 
+                    
                     body{
                       background: linear-gradient(
                         #2d0a0a 10px,
@@ -989,3 +952,18 @@
                     }
 
                   }
+
+                  @media screen and (max-width: 574px) {
+                  }
+
+                  /*
+                   body{
+                      background: linear-gradient(
+                        #380971 10px,
+                        hsl(0, 100%, 8%) 5%,
+                        #480770 20%,
+                        #04063c 50%,
+                        #011d64 100%
+                      );
+                    }
+                  */
