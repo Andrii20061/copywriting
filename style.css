@@ -223,15 +223,6 @@
                         margin-left: 5%;
                       }
 
-                      .trio{
-                        width: 35%;
-                        height: 40vh;
-                        position: relative;
-                        margin-left: 62%;
-                        margin-bottom: -8%;
-                        margin-top: -2%;
-                      }
-
                       #contatto{
                         font-size: 140%;
                         color: #eaeaea;
@@ -303,8 +294,8 @@
                         font-size: 230%;
                         text-align: center;
                         max-width: 40%;
-                        margin-left: 52%;
-                        margin-top: 10%;
+                        margin-left: 55%;
+                        margin-top: 8%;
                         color: #4B1037;
                         z-index: 7;
                         position: relative;
@@ -335,9 +326,9 @@
                         position: relative;
                         z-index: 6;
                         font-size: 160%;
-                        margin-top: -40%;
+                        margin-top: -45%;
                         max-width: 45%;
-                        margin-left: 60%;
+                        margin-left: 52%;
                         line-height: 1.5;
                       }
 
@@ -345,10 +336,11 @@
                         position: relative;
                         z-index: 6;
                         font-size: 160%;
-                        margin-top: 2%;
+                        margin-top: 6%;
                         max-width: 45%;
                         margin-left: 60%;
                         line-height: 1.7;
+                        margin-bottom: -3%;
                       }
 
                       #problema {
@@ -361,6 +353,15 @@
                         margin-left: 7%;
                         font-family: 'Fraunces';
                         line-height: 2;
+                      }
+
+                      .trio{
+                        width: 40%;
+                        height: 49vh;
+                        position: relative;
+                        margin-left: 6%;
+                        margin-bottom: -12%;
+                        margin-top: -10%;
                       }
 
                       .shape{
@@ -764,6 +765,14 @@
                       margin-bottom: -18%;
                     }
 
+                    #problematesto2{
+                      margin-bottom: -20%;
+                    }
+
+                    .trio{
+                      margin-bottom: 2%;
+                    }
+
 
                   }
 
@@ -815,10 +824,22 @@
                     .btn{
                       margin-left: 35%;
                     }
+
+                    #problematesto2{
+                      margin-bottom: -20%;
+                    }
+
+                    .trio{
+                      margin-bottom: 1%;
+                    }
                         
                   }
 
                   @media screen and (max-width: 768px) {
+
+                    .curved-text{
+                      color: #E6B17A;
+                    }
 
                     
                     body{
@@ -829,7 +850,7 @@
                         #730000 50%,
                         #8B0000 100%
                         );
-                      cursor: auto;
+                      cursor: none;
                     }
 
                     #penna{
@@ -854,11 +875,14 @@
 
                     #problematesto{
                       margin-top: -50%;
+                      font-size: 130%;
                     }
 
                     #problematesto2{
-                      margin-left: 27%;
-                      margin-top: 23%;
+                      margin-left: 5%;
+                      margin-top: 2%;
+                      font-size: 125%;
+                      margin-bottom: -30%;
                     }
 
                     #soluzione {
@@ -868,6 +892,11 @@
 
                     .btn{
                       margin-left: 35%;
+                    }
+
+                    .trio{
+                      margin-left: 57%;
+                      margin-bottom: -3%;
                     }
 
                   }
@@ -894,7 +923,7 @@
                     }
 
                     .trio{
-                      margin-bottom: -40%;
+                      margin-bottom: -30%;
                     }
 
                     #problema{
@@ -909,6 +938,18 @@
                     
                     #striscia{
                       margin-bottom: 4%;
+                    }
+
+                    .trio{
+                      margin-bottom: 1%;
+                    }
+                    
+                    #fonti{
+                      margin-bottom: 35%;
+                    }
+
+                    .book{
+                      margin-top: -70%;
                     }
                 
                   }
@@ -952,6 +993,22 @@
                       margin-bottom: -4%;
                     }
 
+                    
+                   
+                  
+
+                  }
+
+                  @media screen and (max-width: 240px) {
+                    body{
+                      background: linear-gradient(
+                        #380971 10px,
+                        hsl(0, 100%, 8%) 5%,
+                        #480770 20%,
+                        #04063c 50%,
+                        #011d64 100%
+                      );
+                    }
                   }
 
                   
