@@ -1037,8 +1037,11 @@
                     .trio{
                       margin-left: 50%;
                     }
-                  
 
+                    #attenzione{
+                      font-size: 230%;
+                    }
+                  
                   }
 
                   @media screen and (max-width: 580px) {
@@ -1049,6 +1052,14 @@
 
                     #soluzione{
                       margin-bottom: 3%;
+                    }
+
+                    .btn{
+                      font-size: 130%;
+                    }
+
+                    .fonti{
+                      max-width: 20%;
                     }
 
                   }
@@ -1100,6 +1111,15 @@
                     #azienda{
                       font-size: 100%;
                     }
+
+                    #subheadline{
+                      font-size: 130%;
+                    }
+
+                    #finale-text{
+                      font-size: 380%;
+                    }
+
                   }
 
                   @media screen and (max-width: 495px) {
@@ -1113,7 +1133,27 @@
                     }
 
                     .blocco-blu{
-                      margin-left: 2%;
+                      margin-left: 1.2%;
                     }
+
+                    #finale{
+                      font-size: 100%;
+                    }
+
+                    #attenzione-testo{
+                      font-size: 120%;
+                    }
+                  }
+
+                  @media screen and (max-width: 480px) {
+
+                    #azienda{
+                      font-size: 90%;
+                    }
+
+                    .tenebre{
+                      height: 60vh;
+                    }
+
                   }
 
