@@ -1053,6 +1053,12 @@
 
                   }
 
+                  @media screen and (max-width: 525px) {
+                    #finale{
+                      font-size: 110%;
+                    }
+                  }
+
                   
 
                   /*
