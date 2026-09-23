@@ -1041,7 +1041,7 @@
                     #attenzione{
                       font-size: 230%;
                     }
-                  
+
                   }
 
                   @media screen and (max-width: 580px) {
@@ -1058,13 +1058,14 @@
                       font-size: 130%;
                     }
 
-                    .fonti{
+                    #fonti{
                       max-width: 20%;
                     }
 
                   }
 
                   @media screen and (max-width: 525px) {
+
                     #finale{
                       font-size: 110%;
                     }
@@ -1095,6 +1096,10 @@
 
                     #finale{
                       font-size: 110%;
+                    }
+
+                    .btn{
+                      font-size: 115%;
                     }
                   }
 
@@ -1143,6 +1148,10 @@
                     #attenzione-testo{
                       font-size: 120%;
                     }
+
+                    .tenebre{
+                      height: 62vh;
+                    }
                   }
 
                   @media screen and (max-width: 480px) {
@@ -1153,6 +1162,14 @@
 
                     .tenebre{
                       height: 60vh;
+                    }
+
+                    #attenzione-testo{
+                      margin-bottom: 4%;
+                    }
+
+                    .filo{
+                      margin-top: -80%;
                     }
 
                   }
