@@ -1044,11 +1044,15 @@
                   @media screen and (max-width: 580px) {
                     
                     #problematesto2{
-                      margin-top: -30%;
+                      margin-top: -23%;
                     }
 
                     #titolo{
-                      font-size: 300%;
+                      font-size: 370%;
+                    }
+
+                    #soluzione{
+                      margin-bottom: 3%;
                     }
 
                   }
