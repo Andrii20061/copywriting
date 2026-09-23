@@ -1041,16 +1041,16 @@
 
                   }
 
-                  @media screen and (max-width: 240px) {
-                    body{
-                      background: linear-gradient(
-                        #380971 10px,
-                        hsl(0, 100%, 8%) 5%,
-                        #480770 20%,
-                        #04063c 50%,
-                        #011d64 100%
-                      );
+                  @media screen and (max-width: 580px) {
+                    
+                    #problematesto2{
+                      margin-top: -10%;
                     }
+
+                    #titolo{
+                      font-size: 400%;
+                    }
+
                   }
 
                   
