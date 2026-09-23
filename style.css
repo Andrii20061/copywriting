@@ -356,7 +356,7 @@
                       }
 
                       .trio{
-                        width: 40%;
+                        width: 45%;
                         height: 49vh;
                         position: relative;
                         margin-left: 6%;
@@ -826,11 +826,17 @@
                     }
 
                     #problematesto2{
+                      margin-left: 8%;
                       margin-bottom: -20%;
                     }
 
                     .trio{
                       margin-bottom: 1%;
+                      margin-left: 56%;
+                    }
+
+                    #soluzione{
+                      margin-left: 23%;
                     }
                         
                   }
@@ -839,6 +845,10 @@
 
                     .curved-text{
                       color: #E6B17A;
+                    }
+
+                    .filo{
+                      margin-top: -80%;
                     }
 
                     
@@ -903,6 +913,10 @@
 
                   @media screen and (max-width: 730px) {
 
+                    .filo{
+                      margin-top: -70%;
+                    }
+
                     #titolo{
                       font-size: 500%;
                     }
@@ -951,6 +965,21 @@
                     .book{
                       margin-top: -70%;
                     }
+
+                    #problematesto2{
+                      margin-top: 8%;
+                      margin-bottom: -40%;
+                    }
+
+                    #problematesto{
+                      margin-top: -60%;
+                      font-size: 120%;
+                    }
+
+                    .curved-text{
+                      width: 45%;
+                      margin-left: 25%;
+                    }
                 
                   }
 
@@ -993,13 +1022,26 @@
                       margin-bottom: -4%;
                     }
 
+                    #problematesto{
+                      font-size: 110%;
+                    }
+
+                    #soluzione{
+                      font-size: 140%;
+                    }
+
+                    #problematesto2{
+                      margin-bottom: -45%;
+                    }
                     
-                   
+                    .trio{
+                      margin-left: 50%;
+                    }
                   
 
                   }
 
-                  @media screen and (max-width: 440px) {
+                  @media screen and (max-width: 240px) {
                     body{
                       background: linear-gradient(
                         #380971 10px,
