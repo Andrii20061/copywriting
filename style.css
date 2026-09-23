@@ -1096,4 +1096,24 @@
                     #attenzione-testo{
                       max-width: 90%;
                     }
+
+                    #azienda{
+                      font-size: 100%;
+                    }
                   }
+
+                  @media screen and (max-width: 495px) {
+
+                    #soluzione{
+                      font-size: 120%;
+                    }
+
+                    #titolo{
+                      font-size: 400%;
+                    }
+
+                    .blocco-blu{
+                      margin-left: 2%;
+                    }
+                  }
+
