@@ -1063,20 +1063,22 @@
                     }
 
                     .tenebre{
-                      height: 50vh;
+                      height: 60vh;
+                    }
+
+                    .curved-text{
+                      margin-left: 22%;
+                    }
+                    
+                    #problematesto{
+                      font-size: 100%;
+                    }
+
+                    #problematesto2{
+                      font-size: 100%;
+                    }
+
+                    .blocco-blu{
+                      margin-left: 1%;
                     }
                   }
-
-                  
-
-                  /*
-                   body{
-                      background: linear-gradient(
-                        #380971 10px,
-                        hsl(0, 100%, 8%) 5%,
-                        #480770 20%,
-                        #04063c 50%,
-                        #011d64 100%
-                      );
-                    }
-                  */
