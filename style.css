@@ -1050,16 +1050,12 @@
                       font-size: 470%;
                     }
 
-                    #soluzione{
-                      margin-bottom: 3%;
-                    }
-
                     .btn{
                       font-size: 130%;
                     }
 
                     #fonti{
-                      max-width: 20%;
+                      max-width: 40%;
                     }
 
                   }
@@ -1101,6 +1097,7 @@
                     .btn{
                       font-size: 115%;
                     }
+
                   }
 
                   @media screen and (max-width: 510px) {
@@ -1121,7 +1118,7 @@
                       font-size: 130%;
                     }
 
-                    #finale-text{
+                    #final-text{
                       font-size: 380%;
                     }
 
@@ -1172,5 +1169,21 @@
                       margin-top: -80%;
                     }
 
+                    #problematesto2{
+                      margin-top: -50%;
+                    }
+
+                  }
+
+                  @media screen and (max-width: 450px) {
+
+                    #titolo{
+                      font-size: 350%;
+                    }
+
+                    #attenzione-testo{
+                      margin-top: 7%;
+                      font-size: 105%;
+                    }
                   }
 
