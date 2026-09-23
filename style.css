@@ -1057,6 +1057,14 @@
                     #finale{
                       font-size: 110%;
                     }
+
+                    #titolo{
+                      font-size: 450%;
+                    }
+
+                    .tenebre{
+                      height: 70vh;
+                    }
                   }
 
                   
