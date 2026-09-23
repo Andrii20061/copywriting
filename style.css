@@ -999,7 +999,7 @@
 
                   }
 
-                  @media screen and (max-width: 340px) {
+                  @media screen and (max-width: 440px) {
                     body{
                       background: linear-gradient(
                         #380971 10px,
