@@ -1185,5 +1185,9 @@
                       margin-top: 7%;
                       font-size: 105%;
                     }
+
+                    #changing-text{
+                      font-size: 400%;
+                    }
                   }
 
