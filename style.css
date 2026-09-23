@@ -1081,4 +1081,19 @@
                     .blocco-blu{
                       margin-left: 1%;
                     }
+
+                    #finale{
+                      font-size: 110%;
+                    }
+                  }
+
+                  @media screen and (max-width: 510px) {
+
+                    #problema{
+                      font-size: 200%;
+                    }
+
+                    #attenzione-testo{
+                      max-width: 90%;
+                    }
                   }
