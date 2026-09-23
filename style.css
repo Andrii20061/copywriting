@@ -1055,7 +1055,7 @@
                     }
 
                     #fonti{
-                      max-width: 40%;
+                      max-width: 55%;
                     }
 
                   }
@@ -1096,6 +1096,10 @@
 
                     .btn{
                       font-size: 115%;
+                    }
+
+                    #attenzione{
+                      font-size: 200%;
                     }
 
                   }
@@ -1170,7 +1174,15 @@
                     }
 
                     #problematesto2{
-                      margin-top: -50%;
+                      margin-top: 1%;
+                    }
+
+                    .btn{
+                      font-size: 90%;
+                    }
+
+                    #attenzione{
+                      font-size: 190%;
                     }
 
                   }
@@ -1188,6 +1200,19 @@
 
                     #changing-text{
                       font-size: 400%;
+                    }
+
+                    body {
+                      background: linear-gradient
+                      (#000000 10px, 
+                      #1a0000 5%, 
+                      #4d0000 20%, 
+                      #730000 50%, 
+                      #8B0000 100%);
+                    }
+
+                    #attenzione{
+                      font-size: 180%;
                     }
                   }
 
