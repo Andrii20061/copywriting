@@ -1358,6 +1358,10 @@
                       width: 40%;
                     }
 
+                    .blocco-blu{
+                      max-width: 80%;
+                    }
+
                   }
 
                   @media screen and (max-width: 385px) {
@@ -1412,5 +1416,9 @@
 
                     .tenebre{
                       height: 36vh;
+                    }
+
+                    #attenzione-testo{
+                      margin-bottom: 10%;
                     }
                   }
