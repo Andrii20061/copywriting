@@ -1185,7 +1185,7 @@
                     }
 
                     #finale{
-                      font-size: 100%;
+                      max-width: 90%;
                     }
 
                     #attenzione-testo{
@@ -1205,7 +1205,7 @@
                   @media screen and (max-width: 480px) {
 
                     #azienda{
-                      max-width: 90%;
+                      font-size: 90%;
                     }
 
                     .tenebre{
@@ -1362,9 +1362,6 @@
                       width: 40%;
                     }
 
-                    .blocco-blu{
-                      width: 80%;
-                    }
                   }
 
                   @media screen and (max-width: 385px) {
@@ -1390,7 +1387,7 @@
                     }
 
                     #problema{
-                      margin-bottom: -10%;
+                      margin-bottom: -30%;
                     }
 
                   }
