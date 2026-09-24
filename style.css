@@ -1361,6 +1361,10 @@
                       height: 35vh;
                       width: 40%;
                     }
+
+                    .blocco-blu{
+                      width: 40%;
+                    }
                   }
 
                   @media screen and (max-width: 385px) {
@@ -1379,6 +1383,10 @@
 
                     #problematesto2{
                       font-size: 75%;
+                    }
+
+                    #foto{
+                      margin-top: -180%;
                     }
 
                   }
