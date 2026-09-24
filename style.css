@@ -1366,10 +1366,26 @@
                   @media screen and (max-width: 385px) {
 
                     #striscia{
-                      margin-bottom: 31%;
+                      margin-bottom: 27%;
                     }
 
                     #changing-text{
                       font-size: 340%;
+                    }
+
+                    #problematesto{
+                      font-size: 75%;
+                    }
+
+                    #problematesto2{
+                      font-size: 75%;
+                    }
+
+                  }
+
+                  @media screen and (max-width: 375px) {
+
+                    .filo{
+                      margin-top: -90%;
                     }
                   }
