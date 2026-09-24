@@ -1164,6 +1164,10 @@
                       font-size: 380%;
                     }
 
+                    #striscia{
+                      margin-bottom: 20%;
+                    }
+
                   }
 
                   @media screen and (max-width: 495px) {
@@ -1300,5 +1304,18 @@
                     .tenebre{
                       margin-top: -70%;
                       height: 55vh;
+                    }
+
+                    #soluzione{
+                      font-size: 100%;
+                    }
+
+                    #problematesto{
+                      font-size: 80%;
+                      margin-top: -10%;
+                    }
+
+                    #problematesto2{
+                      font-size: 80%;
                     }
                   }
