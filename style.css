@@ -1338,7 +1338,7 @@
                     }
 
                     .tenebre{
-                      height: 50vh;
+                      height: 40vh;
                     }
 
                     #finale{
@@ -1406,5 +1406,13 @@
 
                     #striscia{
                       margin-bottom: 30%;
+                    }
+
+                    #problema{
+                      font-size: 150%;
+                    }
+
+                    .tenebre{
+                      height: 36vh;
                     }
                   }
