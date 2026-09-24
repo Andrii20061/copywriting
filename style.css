@@ -1279,7 +1279,7 @@
                     }
                   }
 
-                  @media screen and (max-width: 450px) {
+                  @media screen and (max-width: 425px) {
 
                     .btn{
                       font-size: 75%;
@@ -1298,6 +1298,7 @@
                     }
 
                     .tenebre{
-                      margin-top: -60%;
+                      margin-top: -70%;
+                      height: 55vh;
                     }
                   }
