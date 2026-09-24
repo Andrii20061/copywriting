@@ -848,6 +848,13 @@
                         
                   }
 
+                  @media screen and (max-width: 850px) {
+
+                    #azienda{
+                      font-size: 16%;
+                    }
+                  }
+
                   @media screen and (max-width: 768px) {
 
                     .contenitore{
@@ -918,6 +925,10 @@
                     .trio{
                       margin-left: 57%;
                       margin-bottom: -3%;
+                    }
+
+                    .filo{
+                      margin-top: 10%;
                     }
 
                   }
