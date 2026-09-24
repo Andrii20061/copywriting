@@ -928,7 +928,7 @@
                     }
 
                     .filo{
-                      margin-top: -30%;
+                      margin-top: -40%;
                     }
 
                   }
@@ -1090,6 +1090,10 @@
 
                     .btn{
                       font-size: 125%;
+                    }
+
+                    .tenebre{
+                      height: 70vh;
                     }
 
                   }
@@ -1255,7 +1259,7 @@
                     }
 
                     #striscia{
-                      margin-bottom: 4%;
+                      margin-bottom: 14%;
                     }
                   }
 
