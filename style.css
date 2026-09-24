@@ -1356,4 +1356,9 @@
                     #finale-text{
                       font-size: 360%;
                     }
+
+                    .trio{
+                      height: 40vh;
+                      width: 40%;
+                    }
                   }
