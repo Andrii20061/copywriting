@@ -1009,7 +1009,7 @@
                 
                   }
 
-                  @media screen and (max-width: 640px) {
+                  @media screen and (max-width: 650px) {
 
                     .contenitore{
                       height: 35vh;
@@ -1086,6 +1086,10 @@
 
                     #fonti{
                       max-width: 55%;
+                    }
+
+                    .btn{
+                      font-size: 125%;
                     }
 
                   }
@@ -1184,6 +1188,10 @@
                     .tenebre{
                       height: 62vh;
                     }
+
+                    .btn{
+                      font-size: 100%;
+                    }
                   }
 
                   @media screen and (max-width: 480px) {
@@ -1244,6 +1252,10 @@
 
                     #attenzione{
                       font-size: 180%;
+                    }
+
+                    #striscia{
+                      margin-bottom: 4%;
                     }
                   }
 
