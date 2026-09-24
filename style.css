@@ -928,7 +928,7 @@
                     }
 
                     .filo{
-                      margin-top: -40%;
+                      margin-top: -50%;
                     }
 
                   }
@@ -1133,7 +1133,7 @@
                     }
 
                     .btn{
-                      font-size: 115%;
+                      font-size: 100%;
                     }
 
                     #attenzione{
@@ -1194,7 +1194,7 @@
                     }
 
                     .btn{
-                      font-size: 100%;
+                      font-size: 90%;
                     }
                   }
 
@@ -1260,6 +1260,22 @@
 
                     #striscia{
                       margin-bottom: 14%;
+                    }
+                    
+                    #striscia{
+                      margin-bottom: 20%;
+                    }
+
+                    .btn{
+                      font-size: 85%;
+                    }
+
+                    #finale{
+                      font-size: 90%;
+                    }
+
+                    #azienda{
+                      font-size: 90%;
                     }
                   }
 
