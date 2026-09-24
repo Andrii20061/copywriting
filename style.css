@@ -616,7 +616,7 @@
                   }
 
                   .contenitore{
-                    height: 10%;
+                    height: 50vh;
                     width: 101%;
                     background-color: black;
                   }
@@ -750,6 +750,10 @@
 
                   @media screen and (max-width: 1204px) {
 
+                    .contenitore{
+                      height: 55vh;
+                    }
+
                     .blocco-viola{
                       width: 30%;
                       margin-left: 18%;
@@ -779,6 +783,9 @@
 
                   @media screen and (max-width: 1060px) {
 
+                   .contenitore{
+                    height: 48vh;
+                   }
                     .curved-text{
                       margin-left: 32%;           
                     }
@@ -842,6 +849,10 @@
                   }
 
                   @media screen and (max-width: 768px) {
+
+                    .contenitore{
+                      height: 44vh;
+                    }
 
                     .curved-text{
                       color: #E6B17A;
@@ -912,6 +923,10 @@
                   }
 
                   @media screen and (max-width: 730px) {
+
+                    .contenitore{
+                      height: 40vh;
+                    }
 
                     .filo{
                       margin-top: -70%;
@@ -984,6 +999,10 @@
                   }
 
                   @media screen and (max-width: 640px) {
+
+                    .contenitore{
+                      height: 35vh;
+                    }
 
                     .blocco-blu{
                       width: 90%;
@@ -1139,7 +1158,7 @@
                     }
 
                     .blocco-blu{
-                      margin-left: 1.2%;
+                      margin-left: 1%;
                     }
 
                     #finale{
@@ -1148,6 +1167,7 @@
 
                     #attenzione-testo{
                       font-size: 120%;
+                      margin-bottom: 10%;
                     }
 
                     .tenebre{
