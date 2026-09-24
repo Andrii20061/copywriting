@@ -1185,7 +1185,11 @@
                     }
 
                     #finale{
-                      max-width: 90%;
+                      max-width: 60%;
+                    }
+
+                    #azienda{
+                      max-width: 60%;
                     }
 
                     #attenzione-testo{
@@ -1203,10 +1207,6 @@
                   }
 
                   @media screen and (max-width: 480px) {
-
-                    #azienda{
-                      font-size: 90%;
-                    }
 
                     .tenebre{
                       height: 60vh;
@@ -1387,7 +1387,7 @@
                     }
 
                     #problema{
-                      margin-bottom: -30%;
+                      margin-bottom: -20%;
                     }
 
                   }
