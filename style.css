@@ -617,7 +617,7 @@
 
                   .contenitore{
                     height: 50vh;
-                    width: 101%;
+                    width: 100%;
                     background-color: black;
                   }
 
@@ -928,7 +928,7 @@
                     }
 
                     .filo{
-                      margin-top: -50%;
+                      margin-top: -55%;
                     }
 
                   }
@@ -1279,3 +1279,21 @@
                     }
                   }
 
+                  @media screen and (max-width: 450px) {
+
+                    .btn{
+                      font-size: 75%;
+                    }
+
+                    #striscia{
+                      margin-bottom: 22%;
+                    }
+
+                    #azienda{
+                      font-size: 85%;
+                    }
+
+                    .curved-text{
+                      margin-left: 18%;
+                    }
+                  }
