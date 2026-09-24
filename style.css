@@ -1205,7 +1205,7 @@
                   @media screen and (max-width: 480px) {
 
                     #azienda{
-                      font-size: 90%;
+                      max-width: 90%;
                     }
 
                     .tenebre{
@@ -1363,7 +1363,7 @@
                     }
 
                     .blocco-blu{
-                      width: 70%;
+                      width: 80%;
                     }
                   }
 
@@ -1389,6 +1389,10 @@
                       margin-bottom: 7%;
                     }
 
+                    #problema{
+                      margin-bottom: -10%;
+                    }
+
                   }
 
                   @media screen and (max-width: 375px) {
@@ -1397,9 +1401,6 @@
                       margin-top: -140%;
                     }
 
-                    #problema{
-                      margin-bottom: -40%;
-                    }
                   }
 
                   @media screen and (max-width: 355px) {
