@@ -1363,7 +1363,7 @@
                     }
 
                     .blocco-blu{
-                      width: 100%;
+                      width: 90%;
                     }
                   }
 
@@ -1394,7 +1394,7 @@
                   @media screen and (max-width: 375px) {
 
                     .filo{
-                      margin-top: -90%;
+                      margin-top: -140%;
                     }
                   }
 
