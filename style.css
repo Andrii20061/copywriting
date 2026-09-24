@@ -1319,3 +1319,41 @@
                       margin-top: -7%;
                     }
                   }
+
+                  @media screen and (max-width: 410px) {
+
+                    #striscia{
+                      margin-bottom: 27%;
+                    }
+
+                    #problema{
+                      font-size: 170%;
+                    }
+                  }
+
+                  @media screen and (max-width: 400px) {
+
+                    #titolo{
+                      font-size: 75%;
+                    }
+
+                    .tenebre{
+                      height: 50vh;
+                    }
+
+                    #finale{
+                      font-size: 75%;
+                    }
+
+                    #azienda{
+                      font-size: 75%;
+                    }
+
+                    #attenzione{
+                      font-size: 160%;
+                    }
+
+                    #finale-text{
+                      font-size: 360%;
+                    }
+                  }
