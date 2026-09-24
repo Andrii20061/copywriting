@@ -1303,7 +1303,7 @@
 
                     .tenebre{
                       margin-top: -70%;
-                      height: 55vh;
+                      height: 45vh;
                     }
 
                     #soluzione{
@@ -1358,7 +1358,7 @@
                     }
 
                     .trio{
-                      height: 40vh;
+                      height: 35vh;
                       width: 40%;
                     }
                   }
@@ -1387,5 +1387,24 @@
 
                     .filo{
                       margin-top: -90%;
+                    }
+                  }
+
+                  @media screen and (max-width: 3735px) {
+
+                    #problematesto{
+                      font-size: 70%;
+                    }
+
+                    #problematesto2{
+                      font-size: 70%;
+                    }
+
+                    #azienda{
+                      font-size: 70%;
+                    }
+
+                    #striscia{
+                      margin-bottom: 30%;
                     }
                   }
