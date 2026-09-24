@@ -851,7 +851,7 @@
                   @media screen and (max-width: 850px) {
 
                     #azienda{
-                      font-size: 16%;
+                      font-size: 160%;
                     }
                   }
 
@@ -936,7 +936,7 @@
                   @media screen and (max-width: 730px) {
 
                     .contenitore{
-                      height: 40vh;
+                      height: 43vh;
                     }
 
                     .filo{
@@ -1012,7 +1012,7 @@
                   @media screen and (max-width: 650px) {
 
                     .contenitore{
-                      height: 35vh;
+                      height: 40vh;
                     }
 
                     .blocco-blu{
@@ -1271,11 +1271,11 @@
                     }
 
                     #finale{
-                      font-size: 90%;
+                      max-width: 90%;
                     }
 
                     #azienda{
-                      font-size: 90%;
+                      max-width: 90%;
                     }
                   }
 
