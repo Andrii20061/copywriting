@@ -1363,7 +1363,7 @@
                     }
 
                     .blocco-blu{
-                      width: 90%;
+                      width: 70%;
                     }
                   }
 
@@ -1395,6 +1395,10 @@
 
                     .filo{
                       margin-top: -140%;
+                    }
+
+                    #problema{
+                      margin-bottom: -40%;
                     }
                   }
 
