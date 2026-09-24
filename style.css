@@ -1362,3 +1362,14 @@
                       width: 40%;
                     }
                   }
+
+                  @media screen and (max-width: 385px) {
+
+                    #striscia{
+                      margin-bottom: 31%;
+                    }
+
+                    #changing-text{
+                      font-size: 340%;
+                    }
+                  }
