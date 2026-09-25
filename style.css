@@ -1523,7 +1523,7 @@
                       }
 
                       .btn{
-                        margin-left: 23%;
+                        margin-left: 30%;
                       }
 
                       #problematesto2{
@@ -1550,6 +1550,11 @@
                       #azienda{
                         font-size: 61%;
                       }
+
+                     #problematesto2{
+                      margin-top: -27%;
+                     } 
+                     
                     }
 
                     @media screen and (max-width: 313px) {
@@ -1563,7 +1568,7 @@
                       }
 
                       #titolo{
-                        font-size: 270%;
+                        font-size: 260%;
                       }
 
                     }
