@@ -1245,6 +1245,10 @@
 
                   @media screen and (max-width: 450px) {
 
+                    .contenitore{
+                      height: 30vh;
+                    }
+
                     #titolo{
                       font-size: 350%;
                     }
