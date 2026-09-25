@@ -1472,7 +1472,7 @@
                       }
 
                       .blocco-blu{
-                        max-width: 92%;
+                        max-width: 87%;
                       }
                     }
 
@@ -1519,10 +1519,23 @@
                       }
 
                       .btn{
-                        margin-left: 27%;
+                        margin-left: 17%;
+                      }
+
+                      #problematesto2{
+                        margin-top: -20;
                       }
 
                     }
+
+                    @media screen and (max-width: 321px) {
+
+                      #soluzione{
+                        font-size: 85%;
+                      }
+
+                    }
+
 
                     @media screen and (max-width: 318px) {
 
