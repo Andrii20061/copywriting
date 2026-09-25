@@ -1551,16 +1551,11 @@
                         font-size: 61%;
                       }
 
-                     #problematesto2{
-                      margin-top: -20%;
-                     } 
-
                     }
 
                     @media screen and (max-width: 313px) {
 
                       #problematesto2{
-                        margin-top: -20%;
                         font-size: 55%;
                       }
 
