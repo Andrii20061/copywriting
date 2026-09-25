@@ -1523,7 +1523,7 @@
                       }
 
                       .btn{
-                        margin-left: 30%;
+                        margin-left: 26%;
                       }
 
                       #problematesto2{
@@ -1561,15 +1561,24 @@
 
                       #problematesto2{
                         margin-top: -32%;
+                        font-size: 60%;
+                      }
+
+                      #problematesto{
+                        font-size: 60%;
                       }
 
                       #titolo{
-                        font-size: 255%;
+                        font-size: 235%;
+                      }
+
+                      #problema{
+                        font-size: 140%;
                       }
 
                     }
 
-                    @media screen and (max-width: 313px) {
+                    @media screen and (max-width: 305px) {
 
                       #finale{
                         font-size: 62%;
