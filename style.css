@@ -1485,4 +1485,16 @@
                       font-size: 90%;
                     }
 
+                    #striscia{
+                      margin-bottom: 34;
+                    }
+
+                    #azienda{
+                      font-size: 66%;
+                    }
+                    
+                    #finale{
+                      font-size: 68%;
+                    }
+
                   }
