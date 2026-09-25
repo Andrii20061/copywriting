@@ -1415,6 +1415,10 @@
 
                   @media screen and (max-width: 355px) {
 
+                    .blocco-blu{
+                      max-width: 96%;
+                    }
+
                     .contenitore{
                       height: 26vh;
                     }
@@ -1432,7 +1436,7 @@
                     }
 
                     #striscia{
-                      margin-bottom: 30%;
+                      margin-bottom: 40%;
                     }
 
                     #problema{
@@ -1465,10 +1469,6 @@
 
                   @media screen and (max-width: 332px) {
 
-                    #striscia{
-                      margin-bottom: 30%;
-                    }
-
                     #final-text{
                       font-size: 340%;
                     }
@@ -1498,7 +1498,7 @@
                     }
 
                     #changing-text{
-                      font-size: 370%;
+                      font-size: 350%;
                     }
 
                   }
