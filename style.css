@@ -862,6 +862,10 @@
 
                     @media screen and (max-width: 768px) {
 
+                      .contact-box{
+                        width: 90%;
+                      }
+
                         #titolo{
                           margin-top: 19%;
                         }
