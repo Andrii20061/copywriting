@@ -863,7 +863,7 @@
                     @media screen and (max-width: 768px) {
 
                       .contact-box{
-                        width: 90%;
+                        width: 75%;
                       }
 
                         #titolo{
@@ -1554,7 +1554,7 @@
                      #problematesto2{
                       margin-top: -27%;
                      } 
-                     
+
                     }
 
                     @media screen and (max-width: 313px) {
