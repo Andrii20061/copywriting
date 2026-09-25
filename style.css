@@ -1415,6 +1415,10 @@
 
                   @media screen and (max-width: 355px) {
 
+                    .contenitore{
+                      height: 26vh;
+                    }
+
                     #problematesto{
                       font-size: 70%;
                     }
