@@ -1519,7 +1519,7 @@
                       }
 
                       .btn{
-                        margin-left: 17%;
+                        margin-left: 23%;
                       }
 
                       #problematesto2{
@@ -1532,6 +1532,10 @@
 
                       #soluzione{
                         font-size: 85%;
+                      }
+
+                      #problematesto2{
+                        margin-top: -24%;
                       }
 
                     }
@@ -1552,6 +1556,10 @@
 
                       #problematesto2{
                         margin-top: -12%;
+                      }
+
+                      #titolo{
+                        font-size: 270%;
                       }
 
                     }
