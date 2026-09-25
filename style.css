@@ -862,6 +862,10 @@
 
                   @media screen and (max-width: 768px) {
 
+                    #titolo{
+                      margin-top: 6%;
+                    }
+
                     .contenitore{
                       height: 44vh;
                     }
