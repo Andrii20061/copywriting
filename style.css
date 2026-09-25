@@ -1593,6 +1593,10 @@
                       }
 
                       #final-text{
-                        font-size: 360%;
+                        font-size: 340%;
+                      }
+
+                      #soluzione{
+                        font-size: 80%;
                       }
                     }
