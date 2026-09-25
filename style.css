@@ -619,6 +619,7 @@
                     height: 50vh;
                     width: 100%;
                     background-color: black;
+                    margin-bottom: 0;
                   }
 
                   #finale{
@@ -1104,6 +1105,10 @@
 
                   @media screen and (max-width: 525px) {
 
+                    .contenitore{
+                      height: 35vh;
+                    }
+
                     #finale{
                       font-size: 110%;
                     }
@@ -1394,6 +1399,10 @@
                       margin-bottom: -8%;
                     }
 
+                    #azienda{
+                      font-size: 74%;
+                    }
+
                   }
 
                   @media screen and (max-width: 355px) {
@@ -1422,6 +1431,10 @@
                       height: 36vh;
                     }
 
+                    #finale{
+                      font-size: 72%;
+                    }
+
                     #attenzione-testo{
                       margin-bottom: 10%;
                     }
@@ -1439,8 +1452,21 @@
                   }
 
                   @media screen and (max-width: 332px) {
+
                     #striscia{
                       margin-bottom: 30%;
+                    }
+
+                    #final-text{
+                      font-size: 340%;
+                    }
+
+                    #subheadline{
+                      font-size: 150%;
+                    }
+
+                    #attenzione{
+                      font-size: 150%;
                     }
 
                   }
