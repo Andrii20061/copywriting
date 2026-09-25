@@ -1486,7 +1486,7 @@
                     }
 
                     #striscia{
-                      margin-bottom: 34;
+                      margin-bottom: 40;
                     }
 
                     #azienda{
@@ -1495,6 +1495,10 @@
                     
                     #finale{
                       font-size: 68%;
+                    }
+
+                    #changing-text{
+                      font-size: 370%;
                     }
 
                   }
