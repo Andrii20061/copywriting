@@ -853,6 +853,10 @@
                     #azienda{
                       font-size: 160%;
                     }
+
+                    .contenitore{
+                      height: 52vh;
+                     }
                   }
 
                   @media screen and (max-width: 768px) {
@@ -1181,7 +1185,7 @@
                     }
 
                     #finale{
-                      font-size: 90%;
+                      font-size: 95%;
                     }
 
                     #attenzione-testo{
@@ -1338,11 +1342,11 @@
                     }
 
                     #finale{
-                      font-size: 75%;
+                      font-size: 80%;
                     }
 
                     #azienda{
-                      font-size: 75%;
+                      font-size: 80%;
                     }
 
                     #attenzione{
