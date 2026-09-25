@@ -1388,7 +1388,7 @@
                       }
 
                       .blocco-blu{
-                        max-width: 92%;
+                        max-width: 90%;
                       }
 
                     }
@@ -1559,16 +1559,31 @@
 
                     @media screen and (max-width: 313px) {
 
-                      #titolo{
-                        font-size: 270;
-                      }
-
                       #problematesto2{
-                        margin-top: -12%;
+                        margin-top: -32%;
                       }
 
                       #titolo{
-                        font-size: 260%;
+                        font-size: 255%;
                       }
 
+                    }
+
+                    @media screen and (max-width: 313px) {
+
+                      #finale{
+                        font-size: 62%;
+                      }
+
+                      #subheadline{
+                        font-size: 135%;
+                      }
+
+                      #attenzione{
+                        font-size: 135%;
+                      }
+
+                      #final-text{
+                        font-size: 360%;
+                      }
                     }
