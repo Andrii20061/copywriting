@@ -862,9 +862,9 @@
 
                   @media screen and (max-width: 768px) {
 
-                    #titolo{
-                      margin-top: 19%;
-                    }
+                      #titolo{
+                        margin-top: 19%;
+                      }
 
                     .contenitore{
                       height: 44vh;
@@ -1245,6 +1245,10 @@
 
                   @media screen and (max-width: 450px) {
 
+                    #titolo{
+                      margin-top: 22%;
+                    }
+
                     .contenitore{
                       height: 30vh;
                     }
@@ -1288,7 +1292,7 @@
                     }
 
                     #finale{
-                      font-size: 90%;
+                      font-size: 95%;
                     }
 
                     #azienda{
@@ -1355,7 +1359,7 @@
                     }
 
                     #finale{
-                      font-size: 80%;
+                      font-size: 87%;
                     }
 
                     #azienda{
@@ -1376,7 +1380,7 @@
                     }
 
                     .blocco-blu{
-                      max-width: 98%;
+                      max-width: 96%;
                     }
 
                   }
@@ -1448,7 +1452,7 @@
                     }
 
                     #finale{
-                      font-size: 72%;
+                      font-size: 78%;
                     }
 
                     #attenzione-testo{
@@ -1457,6 +1461,10 @@
 
                     #soluzione{
                       font-size: 95%;
+                    }
+
+                    .blocco-blu{
+                      max-width: 92%;
                     }
                   }
 
@@ -1474,11 +1482,11 @@
                     }
 
                     #subheadline{
-                      font-size: 150%;
+                      font-size: 145%;
                     }
 
                     #attenzione{
-                      font-size: 150%;
+                      font-size: 145%;
                     }
 
                     #soluzione{
@@ -1498,7 +1506,8 @@
                     }
 
                     #changing-text{
-                      font-size: 350%;
+                      font-size: 325%;
+                      margin-left: 16%;
                     }
 
                   }
