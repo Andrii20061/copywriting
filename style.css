@@ -1612,7 +1612,7 @@
                       }
 
                       .btn{
-                        margin-left: 23%;
+                        margin-left: 20%;
                       }
 
                     }
@@ -1636,7 +1636,7 @@
                       }
 
                       #titolo{
-                        margin-top: 32%;
+                        margin-top: 35%;
                       }
                     }
 
@@ -1645,6 +1645,30 @@
 
                       #soluzione{
                         font-size: 75%;
+                      }
+
+                    }
+
+                    @media screen and (max-width: 277px) {
+
+                      #changing-text{
+                        font-size: 285%;
+                      }
+
+                      #subheadline{
+                        font-size: 120%;
+                      }
+
+                      #attenzione{
+                        font-size: 120%;
+                      }
+
+                      #finale{
+                        font-size: 54%;
+                      }
+
+                      #azienda{
+                        font-size: 53%;
                       }
 
                     }
