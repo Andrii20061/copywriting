@@ -1506,7 +1506,7 @@
                       }
 
                       #striscia{
-                        margin-bottom: 40;
+                        margin-bottom: 50%;
                       }
 
                       #azienda{
@@ -1587,11 +1587,16 @@
                         font-size: 135%;
                       }
 
-                      #final-text{
-                        font-size: 340%;
-                      }
-
                       #soluzione{
                         font-size: 80%;
                       }
+
+                      #final-text{
+                        font-size: 320%;
+                      }
+
+                      #problema{
+                        font-size: 130%;
+                      }
+
                     }
