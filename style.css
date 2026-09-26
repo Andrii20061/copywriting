@@ -1599,4 +1599,24 @@
                         font-size: 130%;
                       }
 
+                      .btn{
+                        margin-left: 23%;
+                      }
+
+                    }
+
+                    @media screen and (max-width: 290px) {
+
+                      #azienda{
+                        font-size: 55%;
+                      }
+                    }
+
+
+                    @media screen and (max-width: 285px) {
+
+                      #soluzione{
+                        font-size: 75%;
+                      }
+
                     }
