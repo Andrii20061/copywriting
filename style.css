@@ -1505,10 +1505,6 @@
                         font-size: 90%;
                       }
 
-                      #striscia{
-                        margin-bottom: 45%;
-                      }
-
                       #azienda{
                         font-size: 66%;
                       }
@@ -1530,6 +1526,10 @@
                         margin-top: -20%;
                       }
 
+                      #foto{
+                        margin-bottom: 50%;
+                      }
+
                     }
 
                     @media screen and (max-width: 321px) {
@@ -1539,7 +1539,7 @@
                       }
 
                       #foto{
-                        margin-bottom: 14%;
+                        margin-bottom: 20%;
                       }
 
                     }
