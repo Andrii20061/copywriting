@@ -1704,7 +1704,7 @@
                       }
 
                       .contenitore{
-                        height: 27vh;
+                        height: 23vh;
                       }
 
                     }
@@ -1721,6 +1721,14 @@
 
                       #filo{
                         margin-top: -20vh;
+                      }
+
+                      #problematesto2{
+                        font-size: 50%;
+                      }
+
+                      #problematesto{
+                        font-size: 50%;
                       }
 
                     }
