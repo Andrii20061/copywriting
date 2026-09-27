@@ -1703,4 +1703,25 @@
                         margin-bottom: 27%;
                       }
 
+                      .contenitore{
+                        height: 27vh;
+                      }
+
                     }
+
+                    @media screen and (max-width: 270px) {
+
+                      #titolo{
+                        font-size: 225%;
+                      }
+
+                      #problema{
+                        font-size: 120%;
+                      }
+
+                      #filo{
+                        margin-top: -20vh;
+                      }
+
+                    }
+                    
