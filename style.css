@@ -1691,4 +1691,20 @@
                         font-size: 270%;
                       }
 
+                      #soluzione{
+                        font-size: 75%;
+                      }
+
+                      #striscia{
+                        margin-bottom: 55%;
+                      }
+
+                      #foto{
+                        margin-bottom: 39%;
+                      }
+
+                      .filo{
+                        margin-top: -115%;
+                      }
+
                     }
