@@ -1619,6 +1619,10 @@
                         margin-left: 20%;
                       }
 
+                      #foto{
+                        margin-bottom: 28%;
+                      }
+
                     }
 
                     @media screen and (max-width: 290px) {
