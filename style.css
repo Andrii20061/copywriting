@@ -1640,7 +1640,7 @@
                       }
 
                       #striscia{
-                        margin-bottom: 60%;
+                        margin-bottom: 50%;
                       }
 
                       #titolo{
@@ -1677,6 +1677,10 @@
 
                       #azienda{
                         font-size: 53%;
+                      }
+
+                      #final-text{
+                        font-size: 270%;
                       }
 
                     }
