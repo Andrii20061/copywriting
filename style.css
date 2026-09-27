@@ -1711,6 +1711,14 @@
 
                     @media screen and (max-width: 270px) {
 
+                      #foto{
+                        margin-bottom: 34%;
+                      }
+
+                      #striscia{
+                        margin-bottom: 60%;
+                      }
+
                       #titolo{
                         font-size: 225%;
                       }
@@ -1720,7 +1728,7 @@
                       }
 
                       #filo{
-                        margin-top: -20vh;
+                        margin-top: -30vh;
                       }
 
                       #problematesto2{
@@ -1747,5 +1755,28 @@
                         font-size: 260%;
                       }
 
+                      #soluzione{
+                        font-size: 70%;
+                      }
+
+                    }
+
+                    @media screen and (max-width: 260px) {
+
+                      #titolo{
+                        font-size: 205%;
+                      }
+
+                    }
+
+                    @media screen and (max-width: 250px) {
+
+                      #azienda{
+                        font-size: 46%;
+                      }
+
+                      #finale{
+                        font-size: 46%;
+                      }
                     }
                     
