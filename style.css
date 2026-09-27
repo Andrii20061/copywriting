@@ -1636,7 +1636,7 @@
                       }
 
                       .curved-text{
-                        margin-left: 20%;
+                        margin-left: 17%;
                       }
 
                       #striscia{
@@ -1729,6 +1729,22 @@
 
                       #problematesto{
                         font-size: 50%;
+                      }
+
+                      #changing-text{
+                        font-size: 275%;
+                      }
+
+                      #subheadline{
+                        font-size: 110%;
+                      }
+
+                      #attenzione{
+                        font-size: 110%;
+                      }
+
+                      #final-text{
+                        font-size: 260%;
                       }
 
                     }
