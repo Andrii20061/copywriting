@@ -1161,6 +1161,8 @@
 
                     @media screen and (max-width: 510px) {
 
+                      
+
                       #problema{
                         font-size: 200%;
                       }
@@ -1188,6 +1190,8 @@
                     }
 
                     @media screen and (max-width: 495px) {
+
+                      
 
                       #soluzione{
                         font-size: 120%;
@@ -1248,6 +1252,17 @@
                     }
 
                     @media screen and (max-width: 450px) {
+
+                      body{
+                        background: linear-gradient(
+                          #160556 10px,
+                          #2a0000 5%,
+                          #1f094c 20%,
+                          #730000 50%,
+                          #02105c 100%
+                          );
+                        cursor: none;
+                      }
 
                       #titolo{
                         margin-top: 22%;
