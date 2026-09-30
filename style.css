@@ -272,8 +272,7 @@
                           margin-left: 54%;
                           margin-top: -160%;
                           width: 47%;
-                          height: auto;
-                          max-height: 70vh;
+                          height: 100vh;
                           z-index: 4;
                           border-radius: 2cm 0 0 2cm;
                           opacity: 0;
