@@ -277,6 +277,11 @@
                           border-radius: 2cm 0 0 2cm;
                           opacity: 0;
                         }
+
+                        /*
+                        height: auto;
+                        max-height: 100vh
+                        */
                         
                         #foto.visible {
                           opacity: 1;
@@ -1557,17 +1562,6 @@
                     }
 
                     @media screen and (max-width: 313px) {
-
-                      body{
-                        background: linear-gradient(
-                          #160556 10px,
-                          #2a0000 5%,
-                          #1f094c 20%,
-                          #730000 50%,
-                          #02105c 100%
-                          );
-                        cursor: none;
-                      }
 
                       #problematesto2{
                         font-size: 55%;
