@@ -272,10 +272,7 @@
                             margin-left: 54%;
                             margin-top: -160%;
                             width: 47%;
-                             
-                          height: auto;
-                          max-height: 100vh;
-                          
+                            height: 100vh;
                             z-index: 4;
                             border-radius: 2cm 0 0 2cm;
                             opacity: 0;
@@ -283,7 +280,7 @@
 
                           /*
                           height: auto;
-                          max-height: 100vh;
+                          max-height: 100vh
                           */
                           
                           #foto.visible {
@@ -298,7 +295,7 @@
                           }
 
                           #soluzione {
-                            font-size: 230%;
+                            font-size: 220%;
                             text-align: center;
                             max-width: 40%;
                             margin-left: 55%;
@@ -541,6 +538,36 @@
                       .book:hover .book-pages a:nth-child(3) img {
                         transform: translate(0px, -110px) rotate(0deg) scale(1.08);
                       }
+
+
+/* Illuminazione delle pagine del libro */
+.book-pages a img {
+  transition:
+      transform 0.5s ease,
+      filter 0.4s ease,
+      box-shadow 0.4s ease;
+
+  filter: brightness(0.85);
+}
+
+/* Effetto al passaggio del cursore */
+.book-pages a:hover img {
+  filter: brightness(0.85) contrast(1.08);
+
+  box-shadow:
+      0 0 10px rgba(255, 215, 0, 0.8),
+      0 0 25px rgba(255, 215, 0, 0.6),
+      0 0 50px rgba(255, 215, 0, 0.35);
+
+  transform: scale(1.12);
+  z-index: 10;
+}
+
+/* Le altre pagine si attenuano */
+.book-pages:has(a:hover) a:not(:hover) img {
+  filter: brightness(0.45);
+}
+
 
                       @keyframes boxOpen {
                         0% {
@@ -852,8 +879,21 @@
                         #soluzione{
                           margin-left: 23%;
                         }
+
+                        #foto{
+                          height: 100vh;
+                        }
                             
                       }
+
+                      @media screen and (max-width: 920px) {
+
+                        #foto{
+                          height: 90vh;
+                        }
+                        
+                      }
+
 
                       @media screen and (max-width: 850px) {
 
@@ -864,6 +904,11 @@
                         .contenitore{
                           height: 52vh;
                         }
+
+                        #foto{
+                          height: 82vh;
+                        }
+
                       }
 
                       @media screen and (max-width: 768px) {
