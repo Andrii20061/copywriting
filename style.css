@@ -1348,6 +1348,10 @@
                         #azienda{
                           font-size: 90%;
                         }
+
+                        #foto{
+                          height: 72vh;
+                        }
                       }
 
                       @media screen and (max-width: 425px) {
